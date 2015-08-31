@@ -1,2 +1,3 @@
 # skamnoel.github.io
-my github pages rep
+my github pages rep.
+Skamnoel
