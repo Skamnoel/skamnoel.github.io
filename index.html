@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Features</title>
+	<script type="text/javascript" djConfig="parseOnLoad:1,isDebug:1,async:1" src="/wps/portal_dojo/v1.7/dojo/dojo.js"></script>
+	<script type="text/javascript" src="highlight.pack.js"></script>
+	<link href="styles/github.css" rel="stylesheet">
+	<!-- <link href="https://highlightjs.org/static/styles/monokai_sublime.css" rel="stylesheet"> -->
+</head>
+<body>
+	<h1>JS Features.</h1>
+	<div class="center">
+		<div>
+
+<pre class='line-numbers' id="test"><code class="javascript" id="codeContainer">var test = function(sayThis){
+	alert(sayThis);
+}
+test("Hello World!");</code></pre>
+
+			<div onclick='eval(savedScript);' class="run-button-wrapper" title="Запустить пример">
+				<a class='run-button'></a>
+			</div>	
+
+		</div>
+	</div>
+
+<script type="text/javascript">
+	var savedScript = document.getElementById("codeContainer").innerHTML;
+
+	function addLineNumbers(id) {
+	  var elem = document.getElementById(id);
+	  var lines = new Array(1 + elem.innerHTML.split('\n').length);
+	  // lines = lines.filter(function(item){return (item) && (item!="\n")})
+	  lines = lines.join('<span></span>');
+	  var lineNumbersWrapper = document.createElement('span');
+	  lineNumbersWrapper.className = 'line-numbers-rows';
+	  lineNumbersWrapper.innerHTML = lines;
+	  // if (pre.hasAttribute('data-start')) {
+	  //   pre.style.counterReset = 'linenumber ' + Number(pre.dataset.start) - 1;
+	  // }
+	  elem.appendChild(lineNumbersWrapper);
+	}
+
+	addLineNumbers('test');
+
+	var codeContainer = document.getElementById("codeContainer")
+	// hljs.configure({useBR: true});
+	hljs.highlightBlock(codeContainer);
+</script>
+
+	<style type="text/css">
+	h1, h2, h3{
+		text-align: center;
+	}
+	.center{
+		width:600px;
+		margin: auto;
+		position: relative;
+	}
+	.run-button {
+		width: 0px;
+		height: 0px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid #222;
+		display: block;
+		transition: all .5s ease-in-out;
+	}
+	.run-button-wrapper:hover .run-button  {
+		border-left: 5px solid #15A301;
+	}
+	.run-button-wrapper{
+		cursor: pointer;
+		top: 1px;
+		right: 1px;
+		z-index: 10;
+		position: absolute;
+		padding:5px 15px;
+		border: 1px solid #777;
+		opacity: 0.6;
+		transition: all .5s ease-in-out;
+	}
+	.run-button-wrapper:hover{
+		top: 7px;
+		right: 10px;
+		opacity: 1.0;
+		transform: scale(1.5);
+		background-color: #fff;
+		border: 1px solid #15A301;
+	}
+	pre.line-numbers{
+	    padding-left: 3em;
+	    counter-reset: linenumber;
+	}
+	pre{
+		border: 1px dashed #555;
+		line-height: 18px;
+		font-size: 16px;
+	}
+	.javascript {
+        padding-left: 2em;
+	}
+	.line-numbers .line-numbers-rows {
+	    left: 1px;
+	    top: 1px;
+	    padding: 0.5em 0;
+	    background: #e7e5e3;
+	    position: absolute;
+	    pointer-events: none;
+	    font-size: 100%;
+	    width: 3em;
+	    letter-spacing: -1px;
+	    border-right: 1px solid #999;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	}
+	.line-numbers .line-numbers-rows:after, .line-numbers-rows>span:before {
+	    padding: 0 .7em 0 .8em;
+	    background: #e7e5e3;
+	    text-shadow: none;
+	}
+	.line-numbers-rows>span:before {
+	    content: counter(linenumber);
+	    color: #999;
+	    display: block;
+	    padding-right: .8em;
+	    text-align: right;
+	}
+	.line-numbers-rows>span {
+	    pointer-events: none;
+	    display: block;
+	    counter-increment: linenumber;
+	}
+	</style>
+</body>
+</html>
