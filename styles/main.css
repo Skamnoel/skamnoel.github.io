@@ -1,0 +1,143 @@
+.lms {
+	color:#555;
+	background-color: #CCC;
+}
+h1, h2, h3{
+	text-align: center;
+	margin: 0px;
+    margin-bottom: 10px;
+}
+a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.center{
+	width:600px;
+	margin: auto;
+}
+ul {
+	list-style-type: none;
+	padding:0px 10px;
+}
+.js-example {
+	background-color: #fff;
+	padding: 10px 0px;
+} 
+#menu {
+	position: absolute;
+}
+.menu-list{
+}
+.menu-item{
+	padding: 5px 10px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	background: #333;
+	transition: none;
+	color: #fff;
+}
+.menu-item:hover{
+	background: #333;
+	background: radial-gradient(ellipse at center, #00FF00 0%, #004400 90%, #555 100%);
+	color: #000;
+	transition: all .5s ease-in-out;
+}
+
+.examples li {
+	padding: 3px 0px;
+}
+.example-wrapper{
+	padding:10px;
+	border: 1px dashed #00aD00;
+	position: relative;
+	margin-bottom: 10px;
+}
+.run-button-wrapper{
+	top: 1px;
+	right: 1px;
+	z-index: 10;
+	position: absolute;
+	padding: 5px 15px;
+	border: 1px solid #bbb;
+	opacity: 0.7;
+	transition: all .5s ease-in-out;
+	background-color: #fff;
+	cursor: pointer;
+}
+.trigger-explan {
+	margin-top: 5px;
+	color:#aaa;
+	transition: all .5s ease-in-out;
+}
+.trigger-explan:hover{
+	color: #00aD00;
+}
+.example-wrapper:hover .trigger-remove {
+	display: block;
+}
+.trigger-remove {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    text-decoration: none;
+    color:#aaa;
+    transition: all .5s ease-in-out;
+    display: none;
+    font-size: 14px;
+    line-height: 14px;
+}
+.trigger-remove:hover{
+	color: red;
+}
+.run-button {
+	transition: all .25s ease-in-out;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 7px solid #000;
+}
+.run-button-wrapper:hover{
+	top: 4px;
+	right: 7px;
+	opacity: 1.0;
+	background-color: #000;
+	border: 1px solid #000;
+	transform: rotateX(180deg) scale(1.35);
+}
+.run-button-wrapper:hover .run-button  {
+	border-left: 7px solid #fff;
+	/*transform: scale(1.2);*/
+}
+/* -------------------------------- OVERRIDES -------------------------------- */
+.lms .codewrapper {
+	border: 1px dashed #888;
+	position: relative;
+	/*padding:2px;*/
+	margin-bottom: 5px;
+}
+.lms .syntaxhighlighter{
+	padding-bottom: 1px;
+	margin:0px !important;
+	background: #f8f8f8 !important; 
+	/*background: linear-gradient(#bbb 0%, #eee 100%) !important; */
+}
+.lms .syntaxhighlighter .line{
+	background: transparent !important;
+}
+.lms .syntaxhighlighter .gutter {
+    padding: 5px 0px !important;
+    border-right: 2px solid №999 !important;
+}
+.lms .syntaxhighlighter .gutter {
+    padding: 5px 0px !important;
+}
+.lms .syntaxhighlighter .gutter .line{
+	border-right: 0px solid #999 !important;
+}
+.lms .syntaxhighlighter .gutter{
+	color: #999 !important;
+	background: #e7e5e3 !important;
+}
