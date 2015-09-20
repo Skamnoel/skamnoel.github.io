@@ -12,7 +12,7 @@ a {
 	text-decoration: underline;
 }
 .center{
-	width:600px;
+	width:750px;
 	margin: auto;
 }
 ul {
@@ -22,7 +22,14 @@ ul {
 .js-example {
 	background-color: #fff;
 	padding: 10px 0px;
+	display: none;
+	transform: rotateY(90deg);
 } 
+.js-example.selected {
+	transition: all .5s ease-in-out;
+	transform: rotateY(0deg);	
+	display: block;
+}
 #menu {
 	position: absolute;
 }
@@ -36,6 +43,7 @@ ul {
 	background: #333;
 	transition: none;
 	color: #fff;
+	cursor: pointer;
 }
 .menu-item:hover{
 	background: #333;

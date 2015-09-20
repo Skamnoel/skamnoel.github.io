@@ -43,7 +43,7 @@ $(function() {
 		template: _.template($('#menuItemTemplate').html()),
 
 		events: {
-			'click .menu-item-link': 'menuClicked'
+			'click': 'menuClicked'
 		},
 
 		initialize: function() {
@@ -55,7 +55,7 @@ $(function() {
 		},
 
 		menuClicked: function(e) {
-			console.log(e);
+			this.model.trigger("selected", this.model);
 		},
 
 		render: function() {
@@ -199,9 +199,14 @@ $(function() {
 		},
 
 		initialize: function(options) {
-			console.log("JS Example initialize");
+			var self = this;
 			this.blocksCollection = new BlocksCollection();
-			console.log("blocksCollection:", this.blocksCollection);
+			this.model.on('selected', function(item) {
+				$('.js-example').removeClass('selected').css('display','none');
+				self.$el.fadeIn('250', function() {
+					self.$el.addClass('selected')
+				});
+			});
 		}
 
 	});
@@ -219,8 +224,6 @@ $(function() {
 		},
 
 		addOne: function(jsExampleModel) {
-			console.log("JsExamplesColView.addOne: Creating view for this model: ", jsExampleModel);
-			console.log("title: ", jsExampleModel.get('title'));
 			var jsExampleView = new JsExampleView({
 				model: jsExampleModel
 			});
@@ -284,16 +287,73 @@ $(function() {
 		}, {
 			code: 'var test4 = function(){\n\treturn 4;\n}\ntest4();'
 		}]
+	}, {
+		title: 'Test JS Example Title3',
+		blocks: [{
+			code: 'var test1 = function(sayThis){\n\talert(sayThis);\n}\ntest("Hello World!");',
+			title: 'Block Title1',
+			description: "some description1",
+			explanation: 'Example Explanation1<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>'
+		}, {
+			code: 'var test2 = function(sayThis){\n\talert("Test is OK");\n}\ntest2("Hello World!");',
+			title: 'Block Title2',
+			explanation: 'Example Explanation2<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>'
+
+		}, {
+			code: 'var test3 = function(){\n\treturn 5;\n}\ntest3();',
+			title: 'Block Title3',
+			description: "some description3",
+			explanation: 'Example Explanation'
+		}, {
+			code: 'var test4 = function(){\n\treturn 4;\n}\ntest4();'
+		}]
+	}, {
+		title: 'Test JS Example Title4',
+		blocks: [{
+			code: 'var test1 = function(sayThis){\n\talert(sayThis);\n}\ntest("Hello World!");',
+			title: 'Block Title1',
+			description: "some description1",
+			explanation: 'Example Explanation1<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>'
+		}, {
+			code: 'var test2 = function(sayThis){\n\talert("Test is OK");\n}\ntest2("Hello World!");',
+			title: 'Block Title2',
+			explanation: 'Example Explanation2<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>'
+
+		}, {
+			code: 'var test3 = function(){\n\treturn 5;\n}\ntest3();',
+			title: 'Block Title3',
+			description: "some description3",
+			explanation: 'Example Explanation'
+		}, {
+			code: 'var test4 = function(){\n\treturn 4;\n}\ntest4();'
+		}]
+	}, {
+		title: 'Test JS Example Title5',
+		blocks: [{
+			code: 'var test1 = function(sayThis){\n\talert(sayThis);\n}\ntest("Hello World!");',
+			title: 'Block Title1',
+			description: "some description1",
+			explanation: 'Example Explanation1<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>'
+		}, {
+			code: 'var test2 = function(sayThis){\n\talert("Test is OK");\n}\ntest2("Hello World!");',
+			title: 'Block Title2',
+			explanation: 'Example Explanation2<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>Example Explanation<br/>'
+
+		}, {
+			code: 'var test3 = function(){\n\treturn 5;\n}\ntest3();',
+			title: 'Block Title3',
+			description: "some description3",
+			explanation: 'Example Explanation'
+		}, {
+			code: 'var test4 = function(){\n\treturn 4;\n}\ntest4();'
+		}]
 	}];
 
-	console.log("INIT START...");
 	var jsExamplesCollection = new JsExamplesCollection(examples)
-	console.log("JsExamplesCollection: ", jsExamplesCollection);
 
 	var jsExamplesColView = new JsExamplesColView({
 		collection: jsExamplesCollection
 	});
-	console.log('jsExamplesColView: ', jsExamplesColView);
 	window.jsExamplesColView = jsExamplesColView;
 	jsExamplesColView.render();
 	$('#examplesContainer').append(jsExamplesColView.$el);
