@@ -1,0 +1,25 @@
+{
+	"identifier": "id",
+	"items": [{
+		"id": 52,
+		"name": "Максим",
+		"surname": "Леонтьев",
+		"patronymic": "Сергеевич",
+		"dateOfBirth": "1",
+		"jobPosition": "1"
+	}, {
+		"id": 46,
+		"name": "Дмитрий",
+		"surname": "Бессонов",
+		"patronymic": "Вячеславович",
+		"dateOfBirth": "2",
+		"jobPosition": "2"
+	}, {
+		"id": 33,
+		"name": "Дмитрий",
+		"surname": "Козьмин",
+		"patronymic": "Олегович",
+		"dateOfBirth": "3",
+		"jobPosition": "3"
+	}]
+}

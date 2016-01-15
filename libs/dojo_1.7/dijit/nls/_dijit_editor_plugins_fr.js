@@ -1,0 +1,3 @@
+define('dijit/nls/_dijit_editor_plugins_fr',{
+'dijit/_editor/nls/FontChoice':{"noFormat":"Néant","1":"très très petite","2":"très petite","formatBlock":"Mise en forme","3":"petite","4":"moyenne","5":"grande","6":"très grande","7":"très très grande","fantasy":"fantaisie","serif":"serif","p":"Paragraphe","pre":"Pré-mise en forme","sans-serif":"sans serif","fontName":"Police","h1":"En-tête","h2":"Sous-en-tête","h3":"Sous-sous-en-tête","monospace":"espacement fixe","fontSize":"Taille","cursive":"cursive"}
+});

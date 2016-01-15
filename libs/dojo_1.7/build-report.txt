@@ -1,0 +1,1839 @@
+Build started: Mon Mar 30 2015 14:50:07 GMT-0400 (EDT)
+Build application version: 1.7.8 (7ad6178)
+Messages:
+info(100) Assumed module uses legacy loader API.
+	module: dojox/secure/DOM
+	module: dojox/jsonPath
+	module: dojox/wire/TreeAdapter
+	module: dojox/drawing/stencil/Path
+	module: dojox/widget/DynamicTooltip
+	module: dojox/widget/AnalogGauge
+	module: dojox/widget/Loader
+	module: dojox/xmpp/sasl
+	module: dojox/lang/aspect/memoizerGuard
+	module: dojox/mobile/app/compat
+	module: dojox/widget/gauge/AnalogArrowIndicator
+	module: dojox/drawing/stencil/Ellipse
+	module: dojox/wire/Wire
+	module: dojox/widget/rotator/ThumbnailController
+	module: dojox/mobile/app/ImageView
+	module: dojox/cometd/HttpChannels
+	module: dojox/drawing/plugins/tools/Zoom
+	module: dojox/data/restListener
+	module: dojox/mobile/app/TextBox
+	module: dojox/mobile/app/AlertDialog
+	module: dojox/lang/oo/mixin
+	module: dojox/editor/plugins/ResizeTableColumn
+	module: dojox/drawing/tools/custom/Vector
+	module: dojox/drawing/manager/Undo
+	module: dojox/drawing/stencil/Text
+	module: dojox/drawing/ui/Button
+	module: dojox/widget/CalendarViews
+	module: dojox/mobile/app/SceneController
+	module: dojox/mobile/app/_event
+	module: dojox/cometd/RestChannels
+	module: dojox/widget/RollingList
+	module: dojox/lang/functional/curry
+	module: dojox/drawing/util/typeset
+	module: dojox/drawing/tools/Arrow
+	module: dojox/lang/functional/zip
+	module: dojox/widget/rotator/Wipe
+	module: dojox/wire/ml/XmlHandler
+	module: dojox/wire/ml/util
+	module: dojox/cometd/ack
+	module: dojox/xmpp/ChatService
+	module: dojox/drawing/tools/Ellipse
+	module: dojox/lang/aspect
+	module: dojox/wire/TextAdapter
+	module: dojox/lang/oo/aop
+	module: dojox/lang/aspect/cflow
+	module: dojox/drawing/defaults
+	module: dojox/drawing/tools/Pencil
+	module: dojox/drawing/plugins/tools/Pan
+	module: dojox/drawing/ui/Toolbar
+	module: dojox/help/_base
+	module: dojox/widget/Portlet
+	module: dojox/lang/aspect/counter
+	module: dojox/data/ItemExplorer
+	module: dojox/xmpp/TransportSession
+	module: dojox/lang/functional/listcomp
+	module: dojox/editor/plugins/SpellCheck
+	module: dojox/data/StoreExplorer
+	module: dojox/widget/AutoRotator
+	module: dojox/lang/async/event
+	module: dojox/mobile/app/ImageThumbView
+	module: dojox/gantt/GanttChart
+	module: dojox/image/ThumbnailPicker
+	module: dojox/xmpp/util
+	module: dojox/xmpp/widget/ChatSession
+	module: dojox/drawing/plugins/drawing/GreekPalette
+	module: dojox/widget/Pager
+	module: dojox/mobile/app/StageController
+	module: dojox/cometd/timesync
+	module: dojox/widget/BarGauge
+	module: dojox/drawing/manager/Stencil
+	module: dojox/widget/DocTester
+	module: dojox/lang/docs
+	module: dojox/cometd/longPollTransport
+	module: dojox/lang/async/timeout
+	module: dojox/drawing/annotations/BoxShadow
+	module: dojox/rails
+	module: dojox/cometd/_base
+	module: dojox/gantt/GanttTaskItem
+	module: dojox/gantt/GanttResourceItem
+	module: dojox/widget/gauge/_Gauge
+	module: dojox/wire/ml/Action
+	module: dojox/lang/functional/util
+	module: dojox/layout/BorderContainer
+	module: dojox/xmpp/PresenceService
+	module: dojox/flash/_base
+	module: dojox/lang/oo/Decorator
+	module: dojox/wire/_base
+	module: dojox/drawing/tools/custom/Axes
+	module: dojox/wire
+	module: dojox/layout/dnd/PlottedDnd
+	module: dojox/drawing/util/oo
+	module: dojox/widget/rotator/PanFade
+	module: dojox/widget/gauge/AnalogNeedleIndicator
+	module: dojox/wire/ml/DataStore
+	module: dojox/wire/ml/JsonHandler
+	module: dojox/widget/Iterator
+	module: dojox/xmpp/xmppSession
+	module: dojox/drawing/tools/Rect
+	module: dojox/widget/SortList
+	module: dojox/cometd/longPollTransportFormEncoded
+	module: dojox/lang/functional/tailrec
+	module: dojox/cometd/timestamp
+	module: dojox/jsonPath/query
+	module: dojox/mobile/app/_base
+	module: dojox/lang/functional/numrec
+	module: dojox/drawing/ui/dom/Pan
+	module: dojox/drawing/stencil/_Base
+	module: dojox/drawing/stencil/Rect
+	module: dojox/lang/oo/Filter
+	module: dojox/xmpp/bosh
+	module: dojox/secure/sandbox
+	module: dojox/mobile/app/_FormWidget
+	module: dojox/gantt/GanttProjectItem
+	module: dojox/lang/functional/multirec
+	module: dojox/lang/aspect/memoizer
+	module: dojox/widget/rotator/Slide
+	module: dojox/image/SlideShow
+	module: dojox/cometd
+	module: dojox/drawing/annotations/Angle
+	module: dojox/secure/fromJson
+	module: dojox/drawing/plugins/tools/Iconize
+	module: dojox/widget/CalendarFx
+	module: dojox/mobile/app/_Widget
+	module: dojox/drawing/util/common
+	module: dojox/mobile/app/SceneAssistant
+	module: dojox/help/console
+	module: dojox/drawing/stencil/Image
+	module: dojox/lang/async/topic
+	module: dojox/drawing/plugins/_Plugin
+	module: dojox/drawing/tools/Line
+	module: dojox/lang/observable
+	module: dojox/drawing/manager/Mouse
+	module: dojox/secure/capability
+	module: dojox/widget/FilePicker
+	module: dojox/widget/rotator/Fade
+	module: dojox/drawing/util/positioning
+	module: dojox/lang/async
+	module: dojox/wire/TableAdapter
+	module: dojox/drawing/stencil/Line
+	module: dojox/lang/functional/linrec
+	module: dojox/lang/oo/rearrange
+	module: dojox/drawing/ui/dom/Toolbar
+	module: dojox/wire/ml/Service
+	module: dojox/lang/typed
+	module: dojox/drawing/tools/custom/Equation
+	module: dojox/drawing/library/greek
+	module: dojox/widget/Rotator
+	module: dojox/cometd/longPollTransportJsonEncoded
+	module: dojox/widget/FisheyeList
+	module: dojox/wire/ml/Transfer
+	module: dojox/lang/aspect/profiler
+	module: dojox/widget/DataPresentation
+	module: dojox/wire/DataWire
+	module: dojox/drawing
+	module: dojox/drawing/_base
+	module: dojox/widget/Calendar
+	module: dojox/drawing/manager/Canvas
+	module: dojox/lang/oo/general
+	module: dojox/wire/XmlWire
+	module: dojox/drawing/tools/TextBlock
+	module: dojox/drawing/annotations/Label
+	module: dojox/wire/ml/Invocation
+	module: dojox/lang/functional/binrec
+	module: dojox/gantt/TabMenu
+	module: dojox/jq
+	module: dojox/drawing/manager/StencilUI
+	module: dojox/lang/aspect/timer
+	module: dojox/layout/ext-dijit/layout/StackContainer-touch
+	module: dojox/mobile/app/List
+	module: dojox/widget/UpgradeBar
+	module: dojox/layout/dnd/Avatar
+	module: dojox/drawing/annotations/Arrow
+	module: dojox/drawing/manager/Anchors
+	module: dojox/drawing/library/icons
+	module: dojox/widget/rotator/Pan
+	module: dojox/wire/ml/RestHandler
+	module: dojox/drawing/plugins/drawing/Silverlight
+	module: dojox/drawing/plugins/drawing/Grid
+	module: dojox/xmpp/RosterService
+	module: dojox/mobile/app/ListSelector
+	module: dojox/lang/aspect/tracer
+	module: dojox/widget/FeedPortlet
+	module: dojox/drawing/manager/_registry
+	module: dojox/drawing/ui/Tooltip
+	module: dojox/cometd/callbackPollTransport
+	module: dojox/widget/gauge/AnalogArcIndicator
+	module: dojox/drawing/manager/keys
+	module: dojox/flash
+	module: dojox/wire/CompositeWire
+	module: dojox/widget/rotator/Controller
+	module: dojox/xmpp/UserService
+	module: dojox/image/Gallery
+	module: dojox/widget/gauge/BarIndicator
+	module: dojox/drawing/tools/Path
+	module: dojox/drawing/Drawing
+	module: dojox/drawing/ui/dom/Zoom
+	module: dojox/wire/ml/Data
+info(101) Using dojo/loadInit plugin for module.
+	module: dojox/cometd/RestChannels
+info(102) Optimizing module
+	module: dijit/dijit
+	module: dojox/mobile/app/compat
+	module: dojox/mobile/compat
+	module: dojox/mobile
+	module: dojox/mobile/app
+	module: dojo/dojo
+	module: dojox/_dojox_uuid
+	module: dijit/_dijit_layout_ext
+	module: dijit/_dijit_all
+	module: dojox/_dojox_layout_basic
+	module: dijit/_dijit_form
+	module: dojox/_dojox_data_all
+	module: dojox/_dojox_charting_all
+	module: dojo/_data
+	module: dijit/_dijit_editor
+	module: dojox/_dojox_data_basic
+	module: dijit/_dijit_editor_plugins
+	module: dojox/_dojox_gfx3d
+	module: dojox/_dojox_grid_all
+	module: dijit/_dijit_tree
+	module: dijit/_dijit_app
+	module: dojox/_dojox_gfx
+	module: dijit/_dijit_layout_basic
+	module: dojox/_dojox_charting
+	module: dojox/_dojox_aspect
+	module: dojox/_dojox_collections
+	module: dojox/_dojox_xml
+	module: dojox/_dojox_all
+	module: dojo/_fmt
+	module: dojox/_dojox_string
+	module: dojo/_dnd_basic
+	module: dojox/_dojox_html
+	module: dojo/_dnd_ext
+	module: dojo/_NodeList
+	module: dojo/_fx
+	module: dojox/_dojox_io
+	module: dijit/_dijit_menu
+	module: dojo/_dom
+	module: dojo/_app
+	module: dojox/_dojox_fx
+info(106) Optimizing CSS.
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/ProgressBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Select_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Menu_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Select.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Calendar_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Dialog_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/TimePicker_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/layout/TabContainer_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/icons/commonIcons_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Tree.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Menu.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/layout/BorderContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Toolbar_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Calendar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/InlineEditBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Dialog.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/ColorPalette.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/claro.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/document.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Slider.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/TitlePane.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Toolbar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/layout/TabContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Slider_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/layout/AccordionContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/dijit.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Common_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Button.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/claro_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/TimePicker.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/TitlePane_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/layout/ContentPane.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/icons/commonIcons.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/NumberSpinner.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/icons/editorIcons.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/dijit_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Editor.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/Editor_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/RadioButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/icons/editorIcons_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Button_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dijit/themes/claro/form/Checkbox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/TabBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/TabBar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Portlet/Portlet.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueBall-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/sketch/resources/sketch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Carousel.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGrayStar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/EdgeToEdgeCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/TextBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/DnD_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteDownArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RoundRectList-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/TabBar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ProgressIndicator-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ipad.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Opener.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedBall.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/TextArea.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Slider-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/base.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/IconContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ToggleButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/resources/Grid_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Filter_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/base.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/EnhancedGrid.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Button-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/FileUploader.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RoundRectList-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ComboBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/base-compat.css; skipped: EdgeToEdgeCategory-compat.css,/home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/CheckBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/blackberry-compat.css; skipped: EdgeToEdgeCategory-compat.css,/home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/IconContainer_keyframes.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/drawing/resources/drawing.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedCircleArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/Badge.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/scaleIn.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/CheckBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/View.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/android-app-compat.css; skipped: EdgeToEdgeCategory-compat.css,/home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/scaleOut.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlackCircleCross.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/calc/resources/Common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/ResizeHandle.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/TabBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/slidev.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Button.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/TextArea.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/swirl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/dissolve.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/TextBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/GridContainer.css; non-relative URLs skipped: data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D,../../mdnd/resources/dnd.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/base-compat.css; skipped: EdgeToEdgeCategory-compat.css,/home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/AutoSave.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenCircleMinus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/EdgeToEdgeCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Overlay-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/TextColor.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Loader/Loader.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/iphone-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/common-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/geo/charting/resources/Map.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Opener.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Carousel.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/iphone-app-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/drawing/resources/toolbar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGrayArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteCheck.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Overlay.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/dijit.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Heading-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/View.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonYellowStar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/fruity.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Button.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/zoomIn.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/RollingList/RollingList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ProgressIndicator-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/Breadcrumb.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/iphone-app.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/EdgeToEdgeList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Switch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/DnD.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedCirclePlus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/TextArea-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ToggleButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/SafePaste.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/reveal.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ProgressIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlackCircleCross-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/CheckBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/pastie.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Tooltip.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Sorter_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/EdgeToEdgeCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ipad-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/TriStateCheckBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/atom/widget/templates/css/HtmlFeedEntryViewer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/TabBar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RoundRectList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/dijit-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Calendar/Calendar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/EdgeToEdgeCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ProgressIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Button-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/FisheyeList/FisheyeList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RoundRect-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/resources/Grid.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/custom-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenCirclePlus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/TextBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenBall-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ListItem.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RadioButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ToggleButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/native.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RoundRect.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/android-compat.css; skipped: EdgeToEdgeCategory-compat.css,/home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RoundRectCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/drawing/resources/GreekPalette.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/TextBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RadioButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/TabBar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/iphone.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/IconContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/CheckedMultiSelect.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Pager/Pager.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/RotatorContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGrayRoundRect-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Switch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ComboBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/FilePickerTextBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueCircleArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mdnd/resources/dnd.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Overlay-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/View.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Heading.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonDarkBlueCheck.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/Calendar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGrayStar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/SpinWheel.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/claro/EnhancedGrid.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/ColorPicker/ColorPicker.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/TitleGroup/TitleGroup.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/friendly.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RoundRectCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ListItem.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/calc/resources/GraphPro.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/InsertAnchor.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Heading-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleGreenButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/IconContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Pagination_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonColorButtons.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/StatusBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/EdgeToEdgeCategory-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/manni.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ToggleButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/BusyButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Tooltip.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueCircleArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/Blockquote.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/EdgeToEdgeList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RoundRectList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ListItem-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenCirclePlus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RoundRect-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueCirclePlus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ComboBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedCirclePlus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Switch-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/DocTester/DocTester.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueCirclePlus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/Preview.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Button.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Tooltip-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Common_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/PageIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/TextBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Slider.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/RadioGroup.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/FileInput.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonOrangeBall.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Tooltip-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/custom.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonCheckboxOn.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/android-app.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RoundRect.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ToolBarButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/gauges/_Gauge.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Wizard/Wizard.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/atom/widget/templates/css/HtmlFeedViewerGrouping.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/TextBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/Lightbox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/Magnifier.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ListItem-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ToolBarButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/IconContainer-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/emacs.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGrayRoundRect.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/base.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/charting/resources/Legend.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RoundRectList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonColorButtons-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/autumn.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/perldoc.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/atom/widget/templates/css/HtmlFeedEntryEditor.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ComboBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/borland.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenCircleArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/claro/Common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Slider.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Carousel.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/gantt/resources/gantt.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Button.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleOrangeButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Opener-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Switch-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ComboBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/SortList/SortList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonTransparent29.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/PageIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleDownArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/colorful.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleGreenPlus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedCircleMinus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/DndGridContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RoundRect-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonOrangeBall-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/ThumbnailPicker.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/TextBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/TextArea.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ListItem-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/Rating.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleGreenPlus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Tooltip.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonCheckboxOn-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/CheckBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/base-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Carousel.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleGrayButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Toaster/Toaster.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RadioButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteUpArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleRedCross.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedCircleArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/TextBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ProgressIndicator-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/slide.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleDownArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/ScrollPane.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleGreenButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/ListInput.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/Calendar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/SpellCheck.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonTransparent19.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/html/resources/ellipsis.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/Smiley.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Heading-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/IconContainer-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/SlideShow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Slider-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/CheckBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleOrangeButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/default.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ProgressIndicator-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/CheckBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Opener-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/EdgeToEdgeList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/SpinWheel-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/Save.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueBall.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/ShowBlockNodes.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/ColorPicker.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Heading-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ComboBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonTransparent30.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ToggleButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/FindReplace.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonCheckboxOff.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/UpgradeBar/UpgradeBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/murphy.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/EdgeToEdgeList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/EnhancedGrid_rtl.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RoundRectList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/UploaderFileList.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RoundRect.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ToolBarButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/editorPlugins.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonYellowStar-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/TextArea.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Tooltip-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RoundRect-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RadioButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/FilePicker/FilePicker.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Sorter.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/CheckBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/highlight.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/fade.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Slider.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/TabBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/android.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/FloatingPane.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RoundRect.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueCircleMinus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Heading.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Heading.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ToggleButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/claro/Filter.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RoundRectList-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Overlay.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/widget/Dialog/Dialog.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RoundRectList-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/View.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ToolBarButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/zoomOut.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/atom/widget/templates/css/HtmlFeedViewerEntry.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/TextArea-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/PageBreak.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Slider-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Opener.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/ProgressIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/cover.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Switch-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/IconContainer-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/PasteFromWord.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/base.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ComboBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/PageIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/Switch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ListItem.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/TabBar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonCheckboxOff-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/Gallery.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/ExpandoPane.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/RadioButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/CheckBox-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/IconContainer-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteSearch-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteSearch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RadioButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ProgressIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/form/resources/RangeSlider.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Switch-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Slider.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Button-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/claroEnhancedGrid.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonBlueCircleMinus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Opener.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/RadioButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/TextArea-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/flip.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/PageIndicator.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/RoundRectCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/atom/widget/templates/css/HtmlFeedViewer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedCircleMinus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Button-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Overlay-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/InsertEntity.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ListItem-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleGrayButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ComboBox.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhitePlus-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenCircleArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteCheck-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Overlay-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonRedBall-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/dijit/ColorPalette.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/image/resources/image.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Tooltip-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Opener-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RoundRectCategory.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenBall.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonDarkBlueCheck-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonSilverCircleRedCross-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/Heading.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Switch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/EdgeToEdgeCategory-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/calc/resources/Standard.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/ListItem.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/android/TextArea-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/ToggleButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/blackberry.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteDownArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/revealv.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/resources/claroGrid.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhitePlus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/IconContainer.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/av/widget/resources/Player.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Opener-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/LocalImage.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Filter.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGreenCircleMinus.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/ToggleButton-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/layout/resources/ToggleSplitter.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/common.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonGrayArrow.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons/DomButtonWhiteUpArrow-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/FixedSplitter.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/transitions/coverv.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/highlight/resources/pygments/trac.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/grid/enhanced/resources/Pagination.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/editor/plugins/resources/css/CollapsibleToolbar.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/Tooltip.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/base.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/custom/Overlay.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Switch.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Overlay.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/atom/widget/templates/css/EntryHeader.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/common/domButtons.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/iphone/Slider-compat.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojox/mobile/themes/blackberry/RadioButton.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojo/resources/dnd.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojo/resources/dojo.css
+	file: /home/wsbuild/wp8001.theme/Build_Tree/theme/wp/code/wp.theme.dojo/dojobuild/build/temp/dojo/_firebug/firebug.css
+info(107) Package Version:
+	package: dijit; version: 1.7.8
+	package: dojox; version: 1.7.8
+	package: dojo; version: 1.7.8
+warn(216) dojo/has plugin resource could not be resolved during build-time.
+	plugin resource id: dojo-firebug?./_firebug/firebug; reference module id: dojo/main
+	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
+Layer Contents:
+dojox/_dojox_html:
+	dojox/html/_base
+	dojo/_base/url
+	dojo/date/stamp
+	dojo/html
+	dojox/_dojox_html
+	dojox/html/metrics
+	dojox/html/entities
+	dojo/parser
+	dojox/html
+
+dojox/_dojox_uuid:
+	dojox/uuid
+	dojox/uuid/Uuid
+	dojox/_dojox_uuid
+	dojox/uuid/_base
+	dojox/uuid/generateTimeBasedUuid
+	dojox/uuid/generateRandomUuid
+
+dojox/_dojox_fx:
+	dojox/fx/easing
+	dijit/a11y
+	dojo/NodeList-fx
+	dijit/_WidgetBase
+	dojox/fx
+	dojo/Stateful
+	dijit/registry
+	dojox/fx/Shadow
+	dojo/uacss
+	dojo/window
+	dijit/_OnDijitClickMixin
+	dijit/hccss
+	dojox/fx/_base
+	dijit/_Widget
+	dijit/_FocusMixin
+	dijit/focus
+	dijit/main
+	dojo/_base/query
+	dojox/_dojox_fx
+
+dojox/_dojox_collections:
+	dojox/collections
+	dojox/collections/Queue
+	dojox/collections/Set
+	dojox/collections/SortedList
+	dojox/_dojox_collections
+	dojox/collections/ArrayList
+	dojox/collections/_base
+	dojox/collections/Dictionary
+	dojox/collections/BinaryTree
+	dojox/collections/Stack
+
+dojo/_dnd_basic:
+	dojo/dnd/autoscroll
+	dojo/dnd/Target
+	dojo/dnd/common
+	dojo/dnd/Selector
+	dojo/dnd/AutoSource
+	dojo/_dnd_basic
+	dojo/dnd/Source
+	dojo/dnd/Container
+	dojo/dnd/Manager
+	dojo/dnd/Avatar
+
+dojox/mobile/app:
+	dojo/uacss
+	dojox/mobile/app/_Widget
+	dojox/mobile/app/ImageThumbView
+	dijit/form/_TextBoxMixin
+	dojox/mobile/parser
+	dojox/mobile/app/SceneController
+	dojox/mobile/app/_base
+	dojox/mobile/app/List
+	dojox/mobile/app/ListSelector
+	dojox/mobile/TextBox
+	dojox/mobile/app/ImageView
+	dojox/mobile/app/StageController
+	dojox/mobile/app
+	dojox/mobile/app/_event
+	dojox/mobile/Button
+	dijit/form/_ButtonMixin
+	dojox/mobile/app/TextBox
+	dojox/mobile/app/SceneAssistant
+	dojo/window
+	dojox/mobile/app/AlertDialog
+
+dojo/dojo:
+	dojo/_base/fx
+	dojo/dom-form
+	dojo/_base/html
+	dojo/_base/kernel
+	dojo/io-query
+	dojo/_base/Deferred
+	dojo/NodeList-dom
+	dojo/query
+	dojo/has
+	dojo/_base/loader
+	dojo/json
+	dojo/_base/declare
+	dojo/dom
+	dojo/_base/browser
+	dojo/selector/acme
+	dojo/dom-style
+	dojo/dom-geometry
+	dojo/dom-prop
+	dojo/dom-attr
+	dojo/dom-construct
+	dojo/keys
+	dojo/domReady
+	dojo/_base/lang
+	dojo/Evented
+	dojo/mouse
+	dojo/topic
+	dojo/_base/xhr
+	dojo/_base/unload
+	dojo/dojo
+	dojo/_base/NodeList
+	dojo/_base/Color
+	dojo/selector/_loader
+	dojo/on
+	dojo/_base/sniff
+	dojo/_base/array
+	dojo/_base/json
+	dojo/dom-class
+	dojo/_base/window
+	dojo/_base/config
+	dojo/_base/event
+	dojo/main
+	dojo/ready
+	dojo/aspect
+	dojo/_base/connect
+
+dojo/_app:
+	dojo/i18n
+	dojo/string
+	dojo/io/iframe
+	dojo/hash
+	dojo/io/script
+	dojo/Stateful
+	dojo/AdapterRegistry
+	dojo/back
+	dojo/text
+	dojo/DeferredList
+	dojo/cookie
+	dojo/regexp
+	dojo/cache
+	dojo/_app
+
+dojox/_dojox_charting:
+	dojox/lang/functional/array
+	dojox/charting/Element
+	dojox/gfx/utils
+	dojox/main
+	dojox/lang/functional/reversed
+	dojox/charting/Chart
+	dojox/color/Palette
+	dojox/color/_base
+	dojo/colors
+	dojox/_dojox_charting
+	dojox/charting/Theme
+	dojox/lang/functional/lambda
+	dojox/lang/functional/fold
+	dojox/charting/Series
+	dojox/lang/functional
+	dojox/gfx/gradutils
+	dojox/lang/utils
+	dojox/lang/functional/object
+	dojox/charting/axis2d/common
+
+dijit/_dijit_menu:
+	dojo/uacss
+	dojo/text
+	dijit/templates/MenuBar.html
+	dijit/templates/CheckedMenuItem.html
+	dijit/MenuBarItem
+	dijit/PopupMenuItem
+	dijit/PopupMenuBarItem
+	dijit/templates/MenuSeparator.html
+	dojo/Stateful
+	dojo/touch
+	dojo/string
+	dijit/_KeyNavContainer
+	dijit/CheckedMenuItem
+	dijit/Menu
+	dijit/_dijit_menu
+	dijit/MenuSeparator
+	dijit/DropDownMenu
+	dojo/cache
+	dijit/templates/MenuItem.html
+	dijit/MenuItem
+	dijit/templates/Menu.html
+	dijit/_MenuBase
+	dojo/window
+	dijit/templates/MenuBarItem.html
+	dijit/MenuBar
+
+dojox/_dojox_data_basic:
+	dojox/xml/parser
+	dojox/_dojox_data_basic
+	dojox/data/CsvStore
+	dojox/data/XmlItem
+	dojox/data/XmlStore
+	dojo/_base/query
+
+dojox/_dojox_all:
+	dojox/_dojox_all
+
+dojox/mobile/app/compat:
+	dojox/mobile/app/compat
+	dojox/main
+	dijit/main
+
+dijit/_dijit_editor:
+	dojo/text
+	dijit/form/ToggleButton
+	dijit/_editor/nls/commands
+	dijit/Editor
+	dojo/i18n
+	dijit/_editor/_Plugin
+	dojo/Stateful
+	dojo/_base/url
+	dojo/string
+	dijit/_dijit_editor
+	dijit/form/Button
+	dijit/_editor/html
+	dijit/_editor/RichText
+	dijit/form/templates/Button.html
+	dojo/cache
+	dijit/form/_ToggleButtonMixin
+	dijit/form/_ButtonMixin
+	dijit/_editor/selection
+	dijit/_editor/plugins/EnterKeyHandling
+	dijit/_editor/range
+
+dojox/_dojox_xml:
+	dojox/data/dom
+	dojox/xml/parser
+	dojox/_dojox_xml
+
+dojox/_dojox_charting_all:
+	dojox/charting/themes/Charged
+	dojox/charting/plot2d/ClusteredBars
+	dojox/charting/plot2d/Lines
+	dojox/charting/themes/PlotKit/red
+	dijit/_TemplatedMixin
+	dojox/charting/themes/Chris
+	dijit/_CssStateMixin
+	dojox/charting/plot2d/Areas
+	dijit/place
+	dojox/charting/themes/GreySkies
+	dojox/charting/Chart2D
+	dojox/_dojox_charting_all
+	dojox/charting/themes/WatersEdge
+	dojox/charting/action2d/TouchZoomAndPan
+	dojox/charting/themes/Julie
+	dijit/focus
+	dijit/hccss
+	dojox/charting/BidiSupport
+	dojox/charting/themes/MiamiNice
+	dojox/charting/plot2d/Spider
+	dijit/form/ToggleButton
+	dojox/charting/Chart3D
+	dojox/gfx/_base
+	dojo/Stateful
+	dojox/charting/axis2d/Invisible
+	dojox/charting/action2d/MoveSlice
+	dojox/gesture/tap
+	dojox/charting/themes/PlotKit/cyan
+	dojox/charting/DataSeries
+	dojox/charting/action2d/Magnify
+	dojox/charting/themes/Claro
+	dojox/charting/widget/Legend
+	dojox/charting/plot2d/common
+	dijit/main
+	dojox/charting/themes/Renkoo
+	dojox/charting/themes/Electric
+	dojox/gfx3d/gradient
+	dojox/gfx/shape
+	dijit/_OnDijitClickMixin
+	dojox/charting/action2d/MouseZoomAndPan
+	dojox/charting/action2d/Tooltip
+	dojox/charting/widget/BidiSupport
+	dojox/charting/widget/Sparkline
+	dijit/_BidiSupport
+	dojox/charting/plot2d/Grid
+	dojox/charting/plot2d/Markers
+	dojox/charting/themes/Algae
+	dojox/lang/functional/sequence
+	dojox/charting/widget/Chart2D
+	dojo/cache
+	dojox/gfx3d
+	dojox/charting/themes/Distinctive
+	dijit/form/templates/Button.html
+	dojox/charting/plot2d/Columns
+	dojo/text
+	dojox/charting/themes/PlotKit/orange
+	dojox/charting/themes/BlueDusk
+	dijit/form/templates/CheckBox.html
+	dojox/string/BidiEngine
+	dojox/gfx3d/scheduler
+	dojox/charting/plot2d/StackedBars
+	dojox/charting/themes/PlotKit/blue
+	dojo/uacss
+	dojox/charting/themes/IndigoNation
+	dojox/charting/themes/RoyalPurples
+	dijit/Tooltip
+	dojo/string
+	dijit/form/_FormWidgetMixin
+	dojox/charting/action2d/Base
+	dojox/charting/themes/PrimaryColors
+	dojox/charting/plot2d/Stacked
+	dojox/charting/plot2d/Pie
+	dojox/charting/plot3d/Bars
+	dojox/charting/themes/Adobebricks
+	dojox/gfx
+	dojox/charting/action2d/PlotAction
+	dojox/charting/plot2d/Bars
+	dojox/charting/themes/Minty
+	dojox/charting/themes/Shrooms
+	dojox/charting/themes/Dollar
+	dojox/charting/scaler/linear
+	dijit/_base/manager
+	dojox/charting/plot3d/Base
+	dojox/charting/themes/Wetland
+	dojox/charting/plot2d/Base
+	dojox/charting/themes/SageToLime
+	dijit/BackgroundIframe
+	dijit/form/Button
+	dojox/charting/DataChart
+	dijit/_WidgetBase
+	dojox/charting/plot2d/Default
+	dojox/charting/plot2d/StackedLines
+	dojox/charting/themes/PurpleRain
+	dijit/templates/Tooltip.html
+	dojox/charting/themes/Ireland
+	dojox/charting/themes/Grasshopper
+	dojo/fx/easing
+	dojox/charting/plot2d/StackedAreas
+	dojox/charting/action2d/Highlight
+	dojox/charting/plot3d/Cylinders
+	dojox/charting/themes/PlotKit/base
+	dojox/gesture/Base
+	dojox/charting/themes/Harmony
+	dojox/charting/action2d/ChartAction
+	dojox/charting/plot2d/_PlotEvents
+	dijit/form/_CheckBoxMixin
+	dijit/form/CheckBox
+	dojox/gfx/matrix
+	dojox/charting/axis2d/Base
+	dojox/lang/functional/scan
+	dojox/charting/themes/PlotKit/purple
+	dojox/gfx3d/lighting
+	dojox/charting/scaler/primitive
+	dojo/window
+	dojox/gfx/fx
+	dojox/charting/plot2d/StackedColumns
+	dijit/_FocusMixin
+	dojox/charting/themes/ThreeD
+	dojox/charting/themes/Tufte
+	dojox/gfx/renderer
+	dojox/charting/plot2d/OHLC
+	dojox/charting/themes/CubanShirts
+	dojox/gfx3d/object
+	dijit/form/_ButtonMixin
+	dijit/registry
+	dojox/charting/themes/gradientGenerator
+	dojox/charting/themes/Grasslands
+	dojox/charting/plot2d/Candlesticks
+	dojox/charting/action2d/TouchIndicator
+	dojox/gfx/_gfxBidiSupport
+	dojox/charting/axis2d/Default
+	dojox/charting/plot2d/Scatter
+	dojox/charting/plot2d/ClusteredColumns
+	dojox/charting/action2d/MouseIndicator
+	dijit/form/_FormWidget
+	dojox/charting/widget/Chart
+	dojox/charting/action2d/_IndicatorElement
+	dojox/charting/action2d/Shake
+	dijit/Viewport
+	dojox/charting/StoreSeries
+	dojox/charting/themes/Midwest
+	dojox/charting/widget/SelectableLegend
+	dojox/charting/themes/PlotKit/green
+	dojox/gfx3d/_base
+	dojox/charting/themes/common
+	dijit/a11y
+	dojox/charting/themes/Tom
+	dojox/gfx3d/vector
+	dojox/charting/plot2d/MarkersOnly
+	dijit/form/_ToggleButtonMixin
+	dijit/_Widget
+	dojo/touch
+	dojox/gfx3d/matrix
+	dojo/fx
+	dojox/charting/scaler/common
+	dojox/charting/plot2d/Bubble
+	dojox/charting/themes/Bahamation
+	dojox/charting/themes/Desert
+
+dojo/_dnd_ext:
+	dojo/touch
+	dojo/dnd/TimedMoveable
+	dojo/dnd/Moveable
+	dojo/window
+	dojo/dnd/Mover
+	dojo/dnd/move
+	dojo/_dnd_ext
+
+dijit/dijit:
+	dijit/hccss
+	dijit/_Contained
+	dijit/Viewport
+	dijit/_Container
+	dijit/_base/scroll
+	dijit/layout/_LayoutWidget
+	dijit/_base
+	dijit/form/_FormWidgetMixin
+	dijit/BackgroundIframe
+	dijit/_WidgetsInTemplateMixin
+	dijit/form/_FormValueMixin
+	dijit/_CssStateMixin
+	dijit/form/_FormValueWidget
+	dijit/registry
+	dijit/_base/manager
+	dijit/_base/place
+	dijit/WidgetSet
+	dijit/a11y
+	dijit/typematic
+	dijit/_base/focus
+	dijit/place
+	dijit/_Widget
+	dijit/_FocusMixin
+	dijit/_OnDijitClickMixin
+	dijit/_Templated
+	dijit/focus
+	dijit/_base/sniff
+	dijit/dijit
+	dijit/main
+	dijit/form/_FormWidget
+	dijit/_base/typematic
+	dijit/_base/popup
+	dijit/_TemplatedMixin
+	dijit/_base/wai
+	dijit/popup
+	dijit/_base/window
+	dijit/_WidgetBase
+
+dojo/_NodeList:
+	dojo/NodeList-manipulate
+	dojo/NodeList-fx
+	dojo/NodeList-traverse
+	dojo/NodeList-html
+	dojo/_NodeList
+
+dijit/_dijit_layout_ext:
+	dijit/layout/templates/AccordionButton.html
+	dijit/layout/StackContainer
+	dijit/layout/AccordionPane
+	dijit/layout/TabController
+	dijit/form/ToggleButton
+	dijit/layout/StackController
+	dijit/layout/templates/TabContainer.html
+	dijit/layout/templates/_TabButton.html
+	dijit/_dijit_layout_ext
+	dijit/layout/BorderContainer
+	dijit/form/Button
+	dijit/form/templates/Button.html
+	dijit/layout/templates/_ScrollingTabControllerButton.html
+	dijit/layout/AccordionContainer
+	dijit/form/_ToggleButtonMixin
+	dijit/form/_ButtonMixin
+	dijit/layout/templates/ScrollingTabController.html
+	dijit/layout/ScrollingTabController
+	dijit/layout/TabContainer
+	dijit/_HasDropDown
+	dijit/layout/_TabContainerBase
+
+dojox/_dojox_gfx3d:
+	dojox/gfx3d/_base
+	dojox/gfx3d/object
+	dojox/main
+	dojox/gfx3d/scheduler
+	dojox/gfx3d/matrix
+	dojox/_dojox_gfx3d
+	dojox/gfx3d/gradient
+	dojox/gfx3d
+	dojox/gfx3d/vector
+	dojox/gfx3d/lighting
+
+dijit/_dijit_all:
+	dojo/currency
+	dijit/layout/SplitContainer
+	dijit/dijit-all
+	dojo/dnd/autoscroll
+	dojo/dnd/TimedMoveable
+	dojo/cldr/monetary
+	dojo/cookie
+	dojo/cldr/nls/gregorian
+	dijit/layout/LayoutContainer
+	dojo/date
+	dojo/dnd/Moveable
+	dojo/cldr/nls/number
+	dojo/cldr/supplemental
+	dojo/dnd/Mover
+	dojo/dnd/move
+	dojo/cldr/nls/currency
+	dojo/number
+	dojo/data/util/sorter
+	dojo/date/locale
+	dojo/DeferredList
+	dojo/dnd/common
+	dijit/Declaration
+	dijit/_dijit_all
+	dojo/fx
+
+dojox/_dojox_layout_basic:
+	dijit/a11y
+	dojox/_dojox_layout_basic
+	dijit/_WidgetBase
+	dojox/layout/ContentPane
+	dojox/html/_base
+	dijit/_base/manager
+	dojox/layout/ResizeHandle
+	dijit/registry
+	dijit/_OnDijitClickMixin
+	dijit/hccss
+	dijit/_TemplatedMixin
+	dijit/_Widget
+	dijit/_FocusMixin
+	dijit/focus
+	dijit/_Contained
+	dijit/main
+
+dojox/_dojox_aspect:
+	dojox/main
+	dojox/_dojox_aspect
+	dojox/lang/aspect
+	dijit/main
+
+dojox/_dojox_data_all:
+	dojox/data/QueryReadStore
+	dojox/data/CdfStore
+	dojox/data/JsonQueryRestStore
+	dojox/_dojox_data_all
+	dojox/data/HtmlTableStore
+	dojox/data/CouchDBRestStore
+	dojox/data/GoogleFeedStore
+	dojox/rpc/ProxiedPath
+	dojox/atom/io/Connection
+	dojox/data/css
+	dojox/data/FileStore
+	dojox/data/AndOrWriteStore
+	dojox/data/HtmlStore
+	dojox/main
+	dojox/data/WikipediaStore
+	dojo/data/util/sorter
+	dojox/data/FlickrStore
+	dojo/_base/url
+	dojo/string
+	dojox/json/schema
+	dojox/data/FlickrRestStore
+	dojo/data/util/filter
+	dojox/data/CssClassStore
+	dojox/data/RailsStore
+	dojox/data/AppStore
+	dojox/data/dom
+	dojox/rpc/Service
+	dojox/data/PersevereStore
+	dojox/data/CssRuleStore
+	dojox/data/JsonRestStore
+	dojox/json/query
+	dojox/data/KeyValueStore
+	dojox/rpc/Rest
+	dojox/rpc/Client
+	dojox/rpc/JsonRest
+	dojox/data/ClientFilter
+	dojox/atom/io/model
+	dojo/AdapterRegistry
+	dojo/date/stamp
+	dojox/data/AndOrReadStore
+	dojox/data/OpenSearchStore
+	dojox/data/SnapLogicStore
+	dojox/data/S3Store
+	dojox/data/OpmlStore
+	dojox/json/ref
+	dojox/data/AtomReadStore
+	dojo/data/util/simpleFetch
+	dojox/data/PicasaStore
+	dojox/data/ServiceStore
+	dojox/data/util/JsonQuery
+	dojox/data/GoogleSearchStore
+	dojo/io/script
+
+dojo/_fmt:
+	dojo/i18n
+	dojo/string
+	dojo/date
+	dojo/cldr/supplemental
+	dojo/number
+	dojo/cldr/nls/currency
+	dojo/cldr/nls/gregorian
+	dojo/date/stamp
+	dojo/text
+	dojo/colors
+	dojo/_fmt
+	dojo/cldr/nls/number
+	dojo/regexp
+	dojo/date/locale
+	dojo/cldr/monetary
+	dojo/currency
+
+dijit/_dijit_tree:
+	dijit/tree/_dndSelector
+	dijit/tree/TreeStoreModel
+	dojo/uacss
+	dijit/Tree
+	dijit/_dijit_tree
+	dojo/touch
+	dijit/templates/Tree.html
+	dijit/templates/TreeNode.html
+	dijit/tree/_dndContainer
+	dijit/tree/dndSource
+	dijit/tree/ForestStoreModel
+	dojo/window
+
+dojox/_dojox_string:
+	dojox/_dojox_string
+	dojox/string/tokenize
+	dojox/string/Builder
+	dojox/string/sprintf
+
+dojox/mobile:
+	dojox/mobile/ViewController
+	dojox/mobile/RoundRect
+	dojox/mobile/RoundRectList
+	dojox/mobile/sniff
+	dojox/mobile/TransitionEvent
+	dijit/_WidgetBase
+	dojox/mobile
+	dojox/mobile/View
+	dojox/main
+	dojox/mobile/transition
+	dojo/Stateful
+	dojox/mobile/Heading
+	dojox/mobile/Switch
+	dojox/mobile/ListItem
+	dijit/registry
+	dojox/mobile/common
+	dojox/mobile/uacss
+	dojox/mobile/RoundRectCategory
+	dojox/mobile/ProgressIndicator
+	dojox/mobile/EdgeToEdgeList
+	dojox/mobile/EdgeToEdgeCategory
+	dojox/mobile/ToolBarButton
+	dojox/mobile/_ItemBase
+	dijit/_Contained
+	dojox/mobile/_base
+	dijit/main
+	dijit/_Container
+
+dojox/_dojox_io:
+	dojox/_dojox_io
+	dojox/atom/io/Connection
+	dojox/atom/io/model
+
+dojox/_dojox_gfx:
+	dojox/gfx/arc
+	dojox/gfx
+	dojox/gfx/gradient
+	dojox/_dojox_gfx
+	dojox/gfx/svg
+	dojox/gfx/path
+	dojox/gfx/matrix
+	dojox/gfx/_base
+	dojox/gfx/shape
+	dojox/gfx/renderer
+	dojox/gfx/vml
+
+dojo/_data:
+	dojo/data/util/simpleFetch
+	dojo/data/ItemFileWriteStore
+	dojo/data/util/sorter
+	dojo/_data
+	dojo/data/util/filter
+	dojo/data/ItemFileReadStore
+	dojo/date/stamp
+
+dijit/_dijit_form:
+	dijit/form/nls/validate
+	dijit/form/TextBox
+	dijit/form/templates/ComboButton.html
+	dijit/_HasDropDown
+	dijit/form/Slider
+	dijit/form/_ComboBoxMenuMixin
+	dojo/parser
+	dijit/form/templates/DropDownButton.html
+	dijit/form/ToggleButton
+	dijit/form/NumberSpinner
+	dijit/form/Textarea
+	dijit/form/DateTextBox
+	dijit/form/ComboButton
+	dijit/templates/Calendar.html
+	dijit/form/_AutoCompleterMixin
+	dijit/form/MappedTextBox
+	dijit/form/ComboBoxMixin
+	dijit/form/_TextBoxMixin
+	dijit/form/SimpleTextarea
+	dijit/_TimePicker
+	dijit/form/RadioButton
+	dijit/form/templates/HorizontalSlider.html
+	dijit/templates/TimePicker.html
+	dijit/InlineEditBox
+	dijit/form/_RadioButtonMixin
+	dijit/form/_ListMouseMixin
+	dijit/form/templates/DropDownBox.html
+	dijit/form/NumberTextBox
+	dijit/form/TimeTextBox
+	dijit/form/templates/Button.html
+	dijit/form/CurrencyTextBox
+	dojo/_base/url
+	dijit/form/templates/CheckBox.html
+	dijit/form/templates/VerticalSlider.html
+	dijit/Tooltip
+	dijit/form/VerticalSlider
+	dijit/form/DropDownButton
+	dijit/layout/_ContentPaneResizeMixin
+	dijit/form/RangeBoundTextBox
+	dojo/store/util/SimpleQueryEngine
+	dijit/form/_ExpandingTextAreaMixin
+	dijit/form/HorizontalRule
+	dijit/form/_Spinner
+	dijit/form/Button
+	dijit/form/Form
+	dojo/store/Memory
+	dijit/templates/Tooltip.html
+	dijit/form/ComboBox
+	dijit/form/_FormMixin
+	dijit/form/_CheckBoxMixin
+	dijit/form/templates/ValidationTextBox.html
+	dijit/form/templates/TextBox.html
+	dijit/layout/utils
+	dijit/form/DataList
+	dijit/form/CheckBox
+	dijit/form/ValidationTextBox
+	dijit/form/HorizontalRuleLabels
+	dijit/form/FilteringSelect
+	dijit/form/_ButtonMixin
+	dijit/form/templates/Spinner.html
+	dijit/templates/InlineEditBox.html
+	dijit/form/VerticalRule
+	dijit/form/_FormSelectWidget
+	dijit/form/Select
+	dojo/store/util/QueryResults
+	dijit/form/_ListBase
+	dijit/CalendarLite
+	dijit/form/VerticalRuleLabels
+	dijit/form/_ComboBoxMenu
+	dijit/form/MultiSelect
+	dijit/form/_DateTimeTextBox
+	dijit/Calendar
+	dijit/form/_ToggleButtonMixin
+	dijit/form/templates/Select.html
+	dijit/_dijit_form
+	dijit/form/nls/ComboBox
+	dijit/nls/common
+	dijit/form/HorizontalSlider
+
+dojox/_dojox_grid_all:
+	dijit/form/nls/validate
+	dijit/templates/CheckedMenuItem.html
+	dijit/form/TextBox
+	dojox/grid/enhanced/plugins/filter/_FilterExpr
+	dojox/_dojox_grid_all
+	dojox/grid/DataGrid
+	dijit/_TemplatedMixin
+	dojox/grid/_FocusManager
+	dojox/grid/EnhancedGrid
+	dijit/_CssStateMixin
+	dojo/currency
+	dojox/grid/enhanced/plugins/_StoreLayer
+	dijit/DialogUnderlay
+	dijit/_editor/html
+	dojox/grid/enhanced/plugins/filter/FilterDefDialog
+	dijit/_editor/nls/commands
+	dijit/place
+	dijit/_HasDropDown
+	dijit/tree/TreeStoreModel
+	dijit/_editor/plugins/EnterKeyHandling
+	dojo/dnd/Selector
+	dijit/_MenuBase
+	dojox/grid/TreeSelection
+	dijit/focus
+	dojo/i18n
+	dijit/hccss
+	dojox/html/ellipsis
+	dojox/grid/enhanced/templates/FilterStatusPane.html
+	dojox/grid/enhanced/plugins/filter/ClearFilterConfirm
+	dijit/tree/ForestStoreModel
+	dojox/html/metrics
+	dijit/layout/templates/AccordionButton.html
+	dojox/grid/enhanced/templates/ClearFilterConfirmPane.html
+	dojox/grid/LazyTreeGrid
+	dijit/form/_ComboBoxMenuMixin
+	dojox/grid/_RowSelector
+	dojo/parser
+	dijit/form/templates/DropDownButton.html
+	dojo/dnd/Manager
+	dijit/form/ToggleButton
+	dojo/date/stamp
+	dijit/form/NumberSpinner
+	dojo/Stateful
+	dijit/form/DateTextBox
+	dijit/layout/AccordionContainer
+	dijit/templates/Calendar.html
+	dijit/form/_AutoCompleterMixin
+	dojox/grid/Selection
+	dijit/form/MappedTextBox
+	dojox/grid/enhanced/nls/Filter
+	dijit/form/ComboBoxMixin
+	dijit/form/_TextBoxMixin
+	dojox/grid/enhanced/nls/Pagination
+	dojox/grid/enhanced/plugins/Cookie
+	dijit/_TimePicker
+	dojox/grid/enhanced/plugins/CellMerge
+	dijit/form/RadioButton
+	dijit/form/templates/HorizontalSlider.html
+	dijit/templates/TimePicker.html
+	dojox/grid/enhanced/plugins/Exporter
+	dijit/main
+	dojox/grid/enhanced/plugins/_RowMapLayer
+	dojox/grid/enhanced/plugins/filter/FilterLayer
+	dojox/grid/LazyTreeGridStoreModel
+	dojox/grid/enhanced/_PluginManager
+	dijit/_OnDijitClickMixin
+	dojo/dnd/autoscroll
+	dijit/form/_RadioButtonMixin
+	dojo/dnd/TimedMoveable
+	dojox/grid/enhanced/templates/CriteriaBox.html
+	dojox/grid/enhanced/plugins/Dialog
+	dojox/grid/enhanced/plugins/Printer
+	dojox/grid/enhanced/_Events
+	dijit/form/_ListMouseMixin
+	dojo/cldr/monetary
+	dojo/cookie
+	dojo/cache
+	dijit/form/templates/DropDownBox.html
+	dojox/grid/enhanced/plugins/exporter/_ExportWriter
+	dojox/grid/_ViewManager
+	dijit/_base/popup
+	dijit/form/NumberTextBox
+	dijit/form/TimeTextBox
+	dijit/form/templates/Button.html
+	dijit/form/CurrencyTextBox
+	dojo/_base/url
+	dojox/main
+	dojox/grid/enhanced/plugins/filter/_ConditionExpr
+	dojox/grid/enhanced/plugins/Menu
+	dojox/grid/enhanced/plugins/Search
+	dijit/templates/MenuItem.html
+	dojo/text
+	dijit/form/templates/CheckBox.html
+	dojo/cldr/nls/gregorian
+	dojox/grid/enhanced/plugins/filter/_DataExprs
+	dojo/uacss
+	dojo/string
+	dijit/Tooltip
+	dijit/templates/MenuSeparator.html
+	dojox/grid/enhanced/plugins/NestedSorting
+	dojox/grid/enhanced/plugins/DnD
+	dijit/form/DropDownButton
+	dijit/form/_FormValueMixin
+	dijit/form/_FormWidgetMixin
+	dojox/grid/cells
+	dojox/grid/enhanced/_FocusManager
+	dojo/date
+	dojox/grid/_Layout
+	dijit/form/RangeBoundTextBox
+	dijit/layout/_ContentPaneResizeMixin
+	dojox/grid/enhanced/plugins/filter/FilterBuilder
+	dijit/nls/loading
+	dijit/_editor/RichText
+	dojo/dnd/Moveable
+	dijit/TooltipDialog
+	dojo/store/util/SimpleQueryEngine
+	dojo/cldr/nls/number
+	dojox/grid/_View
+	dijit/typematic
+	dijit/MenuItem
+	dojo/cldr/supplemental
+	dijit/ToolbarSeparator
+	dijit/layout/_LayoutWidget
+	dijit/popup
+	dijit/_base/manager
+	dojox/grid/enhanced/plugins/_SelectionPreserver
+	dojox/grid/_RowManager
+	dijit/templates/TooltipDialog.html
+	dojo/dnd/Mover
+	dijit/BackgroundIframe
+	dojo/dnd/Avatar
+	dijit/templates/Menu.html
+	dijit/form/_Spinner
+	dijit/form/Button
+	dojo/dnd/move
+	dijit/_WidgetBase
+	dojo/store/Memory
+	dojox/grid/TreeGrid
+	dojox/grid/_Grid
+	dijit/templates/Tooltip.html
+	dojox/grid/enhanced/plugins/IndirectSelection
+	dojo/cldr/nls/currency
+	dijit/Editor
+	dojox/grid/cells/dijit
+	dojox/grid/enhanced/templates/FilterBoolValueBox.html
+	dojox/grid/resources/Expando.html
+	dijit/Toolbar
+	dojox/grid/enhanced/nls/EnhancedGrid
+	dojox/grid/resources/_Grid.html
+	dijit/layout/StackContainer
+	dojo/regexp
+	dijit/form/ComboBox
+	dijit/form/_FormMixin
+	dijit/DropDownMenu
+	dojo/data/util/simpleFetch
+	dijit/Menu
+	dijit/form/_CheckBoxMixin
+	dijit/layout/ContentPane
+	dijit/form/templates/ValidationTextBox.html
+	dijit/_Contained
+	dijit/form/templates/TextBox.html
+	dijit/_KeyNavContainer
+	dijit/layout/utils
+	dijit/form/DataList
+	dijit/form/CheckBox
+	dijit/_editor/_Plugin
+	dijit/templates/Dialog.html
+	dojox/grid/enhanced/plugins/Filter
+	dojox/grid/enhanced/plugins/exporter/TableWriter
+	dijit/_Container
+	dojo/dnd/Source
+	dojo/data/ItemFileReadStore
+	dojo/html
+	dijit/form/ValidationTextBox
+	dojo/window
+	dojo/number
+	dojox/grid/enhanced/templates/FilterDefPane.html
+	dijit/_FocusMixin
+	dojo/data/util/filter
+	dojox/grid/enhanced/plugins/Rearrange
+	dijit/_WidgetsInTemplateMixin
+	dojox/grid/_Builder
+	dojox/grid/_TreeView
+	dojox/grid/_EditManager
+	dojo/data/util/sorter
+	dijit/form/_ButtonMixin
+	dijit/form/templates/Spinner.html
+	dojo/colors
+	dijit/registry
+	dojo/date/locale
+	dojox/grid/enhanced/plugins/GridSource
+	dojox/grid/resources/View.html
+	dojox/grid/enhanced/_Plugin
+	dijit/form/_FormSelectWidget
+	dijit/form/Select
+	dojox/grid/enhanced/templates/Pagination.html
+	dijit/_editor/range
+	dojo/store/util/QueryResults
+	dijit/form/_ListBase
+	dijit/form/_FormWidget
+	dojo/DeferredList
+	dojo/dnd/common
+	dijit/CalendarLite
+	dijit/CheckedMenuItem
+	dojox/grid/_Events
+	dojox/grid/enhanced/plugins/Pagination
+	dijit/Viewport
+	dojox/grid/enhanced/plugins/AutoScroll
+	dojox/grid/util
+	dijit/MenuSeparator
+	dijit/form/_ComboBoxMenu
+	dojox/grid/cells/_base
+	dijit/Dialog
+	dijit/form/_DateTimeTextBox
+	dijit/_base/focus
+	dijit/a11y
+	dojox/grid/_Scroller
+	dijit/Calendar
+	dijit/form/_ToggleButtonMixin
+	dojox/grid/enhanced/plugins/Selector
+	dojo/dnd/Container
+	dojox/grid/enhanced/plugins/filter/FilterBar
+	dijit/_Widget
+	dojox/grid/enhanced/templates/FilterBar.html
+	dojo/touch
+	dojox/grid/DataSelection
+	dijit/form/templates/Select.html
+	dijit/_editor/selection
+	dijit/form/nls/ComboBox
+	dojo/fx
+	dojox/grid/cells/tree
+	dojox/grid/_SelectionPreserver
+	dijit/_DialogMixin
+	dijit/nls/common
+	dojox/grid/enhanced/plugins/filter/FilterStatusTip
+	dijit/form/HorizontalSlider
+	dijit/form/_FormValueWidget
+
+dijit/_dijit_editor_plugins:
+	dijit/hccss
+	dijit/Viewport
+	dijit/_Container
+	dijit/_editor/plugins/AlwaysShowToolbar
+	dijit/form/_FormWidgetMixin
+	dijit/BackgroundIframe
+	dijit/_WidgetsInTemplateMixin
+	dojo/_base/query
+	dijit/form/_FormValueMixin
+	dijit/_editor/plugins/ViewSource
+	dijit/_editor/plugins/FontChoice
+	dijit/_editor/plugins/Print
+	dijit/_CssStateMixin
+	dijit/form/_FormValueWidget
+	dojo/data/util/filter
+	dijit/registry
+	dijit/_base/manager
+	dijit/_editor/plugins/TabIndent
+	dijit/a11y
+	dojo/regexp
+	dijit/place
+	dijit/_Widget
+	dijit/_FocusMixin
+	dijit/_OnDijitClickMixin
+	dijit/focus
+	dijit/_editor/plugins/LinkDialog
+	dijit/main
+	dijit/_dijit_editor_plugins
+	dojo/date/stamp
+	dijit/_editor/plugins/FullScreen
+	dijit/_editor/plugins/NewPage
+	dijit/form/_FormWidget
+	dijit/_editor/plugins/TextColor
+	dijit/_TemplatedMixin
+	dojo/colors
+	dijit/_editor/plugins/ToggleDir
+	dijit/popup
+	dijit/_WidgetBase
+	dijit/_editor/nls/FontChoice
+
+dojox/mobile/compat:
+	dojox/mobile/compat
+
+dijit/_dijit_app:
+	dojo/uacss
+	dijit/Toolbar
+	dijit/ProgressBar
+	dijit/templates/ProgressBar.html
+	dojo/touch
+	dijit/ToolbarSeparator
+	dijit/_KeyNavContainer
+	dijit/templates/Tooltip.html
+	dijit/_dijit_app
+	dijit/templates/ColorPalette.html
+	dijit/_PaletteMixin
+	dojo/nls/colors
+	dojo/window
+	dijit/ColorPalette
+	dijit/Tooltip
+
+dojo/_fx:
+	dojo/fx
+	dojo/fx/easing
+	dojo/fx/Toggler
+	dojo/_fx
+
+dojo/_dom:
+	dojo/touch
+	dojo/date/stamp
+	dojo/_base/url
+	dojo/html
+	dojo/uacss
+	dojo/window
+	dojo/parser
+	dojo/_dom
+
+dijit/_dijit_layout_basic:
+	dojo/uacss
+	dojo/text
+	dijit/layout/LinkPane
+	dojo/parser
+	dijit/form/_FormMixin
+	dijit/_dijit_layout_basic
+	dijit/Dialog
+	dijit/_DialogMixin
+	dijit/layout/utils
+	dijit/layout/ContentPane
+	dojo/i18n
+	dijit/nls/loading
+	dojo/Stateful
+	dijit/templates/TooltipDialog.html
+	dojo/_base/url
+	dojo/string
+	dijit/templates/TitlePane.html
+	dijit/DialogUnderlay
+	dijit/nls/common
+	dijit/templates/Dialog.html
+	dojo/cache
+	dijit/TitlePane
+	dojo/date/stamp
+	dijit/TooltipDialog
+	dijit/layout/_ContentPaneResizeMixin
+	dojo/html
+
+
+
+Process finished normally
+	errors: 0
+	warnings: 2
+	build time: 175.978 seconds

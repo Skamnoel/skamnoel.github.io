@@ -1,0 +1,3 @@
+define('dijit/nls/_dijit_editor_plugins_it',{
+'dijit/_editor/nls/FontChoice':{"noFormat":"Nessuna","1":"piccolissimo","2":"molto piccolo","formatBlock":"Formato","3":"piccolo","4":"medio","5":"grande","6":"molto grande","7":"grandissimo","fantasy":"fantasy","serif":"serif","p":"Paragrafo","pre":"Preformattato","sans-serif":"sans-serif","fontName":"Carattere","h1":"Intestazione","h2":"Sottointestazione","h3":"Sottointestazione secondaria","monospace":"spaziatura fissa","fontSize":"Dimensione","cursive":"corsivo"}
+});

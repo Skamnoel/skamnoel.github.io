@@ -1,0 +1,36 @@
+<div style="font-size:150%;">
+	<h2 style="text-align: center;margin:auto;">MyOutputExample:</h2>
+	<table width="100%" style="vertical-align:top;">
+		<tr>
+			<td style="border:1px dashed #777; padding: 5px;vertical-align:top;width:50%;">
+				<h3 style="text-align: center;margin:10px auto;">Input</h3>
+				<div data-dojo-type="dijit.form.TextBox" data-dojo-props="ref: this.model.numberM, intermediateChanges:true"></div>
+			</td>
+			
+			<td style="border:1px dashed #777; padding: 5px;vertical-align:top;width:50%;">
+				<h3 style="text-align: center;margin:10px auto;">Custom Outputs</h3>
+				
+				<!-- 
+					Показаны различные способы привязки к модели. 
+					this в данном случае - это объект виджета lms.examples.MyOutput,
+					в рамках которого происходит обработка выражения.
+				-->
+				<div data-dojo-type="lms.examples.MyOutput" data-dojo-props="ref: this.model.numberM, exprchar:'#'">
+					Значение в модели: <span style="font-weight:bold;color:green;">#{this.value}</span>
+				</div>
+
+				<div data-dojo-type="lms.examples.MyOutput" data-dojo-props="ref: this.model.numberM, exprchar:'#'">
+					Значение в модели: <span style="font-weight:bold;color:green;">#{this.ref.value}</span>
+				</div>
+
+				<div data-dojo-type="lms.examples.MyOutput" data-dojo-props="ref: this.model.numberM, exprchar:'#'">
+					Значение в модели: <span style="font-weight:bold;color:green;">#{this.binding.value}</span>
+				</div>
+
+			</td>
+		</tr>
+	</table>
+
+	<button data-dojo-type="dijit.form.Button" type="button" style="margin:15px;" data-dojo-attach-event="onClick:increment" >Увеличить значение в модели на 1</button>
+	
+</div>

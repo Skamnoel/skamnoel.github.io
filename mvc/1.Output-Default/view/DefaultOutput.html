@@ -1,0 +1,62 @@
+<div style="font-size:150%;">
+	<h2 >Default output tests (blank template):</h2>
+
+	<ul>
+		<li>
+			<h3>Undefined Value:</h3>
+			<span title='' data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.undefinedM"></span>
+		</li>
+		<li>
+			<h3>Null Value:</h3>
+			<span title='' data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.nullM"></span>
+		</li>
+		<li>
+			<h3>Empty String Value:</h3>
+			<span title='' data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.emptyStrM"></span>
+		</li>
+		<li>
+			<h3>Text Value:</h3>
+			<span title='' data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.txtM"></span>
+		</li>
+		<li>
+			<h3>Number Value:</h3>
+			<span title='' data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.numberM" ></span>
+			<br/>
+			
+		</li>
+	</ul>
+
+	<h2 >Default output tests (HTML in template):</h2>
+	<ul>
+		<li>
+			<h3> Тест 1 :</h3>
+			<p data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.numberM" data-dojo-attach-point="_htmlOutput">
+				Значение в numberM: <span style="color:red;">${model.numberM.value}</span> 
+				<!--
+					К сожалению для dojox.mvc.Output в dojo портала невозможно задать templateString декларативно для Output, 
+				 	так как синтаксис $ и {} распознаётся dojo в контексте виджета, которому принадлежит ,а не Output 
+					пример кода выше отработает на загрузке страницы, но при этом не произойдёт связывания 
+					и значение внутри Output не будет обновляться при изменении модели.
+				-->
+			</p>
+		</li>
+		<li>
+			<h3> Тест 2 :</h3>
+			<!-- 
+					Использовать dojox.mvc.Output из поставки портала можно следующим образом:
+					- оставлять его пустым в шаблоне виджета (если нас устраивает просто вывод значения по умолчанию)
+					- объявлять и добавлять его в виджете програмно
+					- объявлять его в шаблоне виджета, а после инициализации програмно изменять его templateString (см. changeTemplate в этом виджете)
+					- как-либо еще передав в него нужный templateString, например через аттрибут виджета (см. код ниже)
+				-->
+			<p data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: this.model.numberM" >
+				Значение в numberM: <span style="color:green;">${numberMTemplate}</span> 
+			</p>
+
+		</li>
+	</ul>
+
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:increment" >Увеличить значение в model.numberM на 1</button>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:changeTemplate" >Изменить шаблон для Тест 1</button>
+	
+</div>

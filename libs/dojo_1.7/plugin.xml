@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin 
+ id="custom.dojo" 
+ name="Dojo plugins" 
+ version="1.0.0" 
+ provider-name="custom">
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_head" >
+		<module id="dojo_17">
+			<capability id="dojo" value="1.7"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/dojo.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/dojo.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_dom_head" >
+		<module id="dojo_dom_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_dom.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_dom.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_app_head" >
+		<module id="dojo_app_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_app.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_app.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_fx_head" >
+		<module id="dojo_fx_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_fx.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_fx.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_fmt_head" >
+		<module id="dojo_fmt_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/nls/_fmt_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_fmt.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_fmt.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_node_list_head" >
+		<module id="dojo_node_list_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_dom_17"/>
+			<prereq id="dojo_fmt_17"/>
+			<prereq id="dojo_fx_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_NodeList.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_NodeList.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_data_head" >
+		<module id="dojo_data_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_data.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_data.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_dnd_basic_head" >
+		<module id="dojo_dnd_basic_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_dom_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_dnd_basic.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_dnd_basic.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojo_dnd_ext_head" >
+		<module id="dojo_dnd_ext_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_dnd_basic_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_dnd_ext.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojo/_dnd_ext.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_head" >
+		<module id="dijit_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_dom_17"/>
+			<prereq id="dojo_app_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/dijit.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/dijit.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_app_head" >
+		<module id="dijit_app_17">
+			<prereq id="dijit_17"/>
+			<prereq id="dojo_app_17"/>
+			<prereq id="dojo_fmt_17"/>
+			<prereq id="dojo_fx_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_app_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_app.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_app.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_menu_head" >
+		<module id="dijit_menu_17">
+			<prereq id="dijit_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_menu.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_menu.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_form_head" >
+		<module id="dijit_form_17">
+			<prereq id="dijit_17"/>
+			<prereq id="dijit_menu_17"/>
+			<prereq id="dojo_data_17"/>
+			<prereq id="dojo_dnd_basic_17"/>
+			<prereq id="dojo_dnd_ext_17"/>
+			<prereq id="dojo_fmt_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_form_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_form.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_form.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_editor_head" >
+		<module id="dijit_editor_17">
+			<prereq id="dijit_17"/>
+			<prereq id="dijit_app_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_editor.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_editor.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_editor_plugins_head" >
+		<module id="dijit_editor_plugins_17">
+			<prereq id="dijit_editor_17"/>
+			<prereq id="dijit_form_17"/>
+			<prereq id="dijit_menu_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_editor_plugins_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_editor_plugins.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_editor_plugins.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_layout_basic_head" >
+		<module id="dijit_layout_basic_17">
+			<prereq id="dijit_17"/>
+			<prereq id="dojo_fx_17"/>
+			<prereq id="dojo_dnd_basic_17"/>
+			<prereq id="dojo_dnd_ext_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_layout_basic_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_layout_basic.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_layout_basic.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_layout_ext_head" >
+		<module id="dijit_layout_ext_17">
+			<prereq id="dojo_app_17"/>
+			<prereq id="dijit_17"/>
+			<prereq id="dijit_menu_17"/>
+			<prereq id="dijit_layout_basic_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_layout_ext.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_layout_ext.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit_tree_head" >
+		<module id="dijit_tree_17">
+			<prereq id="dojo_dnd_basic_17"/>
+			<prereq id="dojo_app_17"/>
+			<prereq id="dojo_fx_17"/>
+			<prereq id="dijit_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_tree.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_tree.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dijit-all_head" >
+		<module id="dijit-all_17">
+			<prereq id="dijit_17"/>
+			<prereq id="dijit_app_17"/>
+			<prereq id="dijit_menu_17"/>
+			<prereq id="dijit_form_17"/>
+			<prereq id="dijit_editor_17"/>
+			<prereq id="dijit_editor_plugins_17"/>
+			<prereq id="dijit_layout_basic_17"/>
+			<prereq id="dijit_layout_ext_17"/>
+			<prereq id="dijit_tree_17"/>
+			<capability id="dijit-all" value="1.7"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/nls/_dijit_all_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_all.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dijit/_dijit_all.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_gfx_head" >
+		<module id="dojox_gfx_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_gfx.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_gfx.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_charting_head" >
+		<module id="dojox_charting_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojox_gfx_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_charting.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_charting.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_charting_all_head" >
+		<module id="dojox_charting_all_17">
+			<prereq id="dojox_charting_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_charting_all.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_charting_all.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_gfx3d_head" >
+		<module id="dojox_gfx3d_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojox_gfx_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_gfx3d.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_gfx3d.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_fx_head" >
+		<module id="dojox_fx_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_fx_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_fx.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_fx.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_layout_basic_head" >
+		<module id="dojox_layout_basic_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_fx_17"/>
+			<prereq id="dojo_dom_17"/>
+			<prereq id="dijit_layout_basic_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_layout_basic.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_layout_basic.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_collections_head" >
+		<module id="dojox_collections_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_collections.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_collections.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_uuid_head" >
+		<module id="dojox_uuid_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_uuid.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_uuid.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_html_basic_head" >
+		<module id="dojox_html_basic_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_html.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_html.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_xml_head" >
+		<module id="dojox_xml_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_xml.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_xml.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_data_basic_head" >
+		<module id="dojox_data_basic_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_data_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_data_basic.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_data_basic.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_data_all_head" >
+		<module id="dojox_data_all_17">
+			<prereq id="dojox_data_basic_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_data_all.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_data_all.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_grid_all_head" >
+		<module id="dojox_grid_all_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the resource bundle BEFORE the layer to avoid a Dojo-induced request for the bundle in a separate request -->
+				<sub-contribution type="js">
+					<!-- ROOT is not associated with any locale so that it's the fallback -->
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_en.js" />
+					<!-- Locale-specific resources are only loaded when that locale is the current one -->
+					<uri lang="ar" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_ar.js" />
+					<uri lang="ca" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_ca.js" />
+					<uri lang="cs" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_cs.js" />
+					<uri lang="da" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_da.js" />
+					<uri lang="de" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_de.js" />
+					<uri lang="el" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_el.js" />
+					<uri lang="en" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_en.js" />
+					<uri lang="es" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_es.js" />
+					<uri lang="fi" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_fi.js" />
+					<uri lang="fr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_fr.js" />
+					<uri lang="he" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_he.js" />
+					<uri lang="hr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_hr.js" />
+					<uri lang="hu" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_hu.js" />
+					<uri lang="it" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_it.js" />
+					<uri lang="ja" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_ja.js" />
+					<uri lang="kk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_kk.js" />
+					<uri lang="ko" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_ko.js" />
+					<uri lang="nl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_nl.js" />
+					<uri lang="no" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_no.js" />
+					<uri lang="pl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_pl.js" />
+					<uri lang="pt" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_pt.js" />
+					<uri lang="pt-br" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_pt-br.js" />
+					<uri lang="ro" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_ro.js" />
+					<uri lang="ru" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_ru.js" />
+					<uri lang="sk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_sk.js" />
+					<uri lang="sl" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_sl.js" />
+					<uri lang="sv" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_sv.js" />
+					<uri lang="th" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_th.js" />
+					<uri lang="tr" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_tr.js" />
+					<uri lang="uk" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_uk.js" />
+					<uri lang="zh" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_zh.js" />
+					<uri lang="zh-tw" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/nls/_dojox_grid_all_zh-tw.js" />
+				</sub-contribution>
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_grid_all.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_grid_all.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_aspect_head" >
+		<module id="dojox_aspect_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_aspect.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_aspect.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_string_head" >
+		<module id="dojox_string_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_string.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_string.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_io_head" >
+		<module id="dojox_io_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_app_17"/>
+			<prereq id="dojo_fmt_17"/>
+			<prereq id="dojox_xml_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_io.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_io.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_mobile_head" >
+		<module id="dojox_mobile_17">
+			<prereq id="dojo_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_mobile_app_head" >
+		<module id="dojox_mobile_app_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_app_17"/>
+			<prereq id="dojo_fx_17"/>
+			<prereq id="dijit_17"/>
+			<prereq id="dojox_mobile_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile/app.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile/app.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_mobile_compat_head" >
+		<module id="dojox_mobile_compat_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_fx_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile/compat.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile/compat.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox_mobile_app_compat_head" >
+		<module id="dojox_mobile_app_compat_17">
+			<prereq id="dojo_17"/>
+			<prereq id="dojo_fx_17"/>
+			<prereq id="dojox_mobile_compat_17"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile/app/compat.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/mobile/app/compat.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+	<extension point="com.ibm.portal.resourceaggregator.module" id="dojo_17_dojox-all_head" >
+		<module id="dojox-all_17">
+			<prereq id="dojox_gfx_17"/>
+			<prereq id="dojox_charting_17"/>
+			<prereq id="dojox_charting_all_17"/>
+			<prereq id="dojox_gfx3d_17"/>
+			<prereq id="dojox_fx_17"/>
+			<prereq id="dojox_layout_basic_17"/>
+			<prereq id="dojox_collections_17"/>
+			<prereq id="dojox_uuid_17"/>
+			<prereq id="dojox_html_basic_17"/>
+			<prereq id="dojox_xml_17"/>
+			<prereq id="dojox_data_basic_17"/>
+			<prereq id="dojox_data_all_17"/>
+			<prereq id="dojox_aspect_17"/>
+			<prereq id="dojox_string_17"/>
+			<prereq id="dojox_io_17"/>
+			<prereq id="dojox_mobile_17"/>
+			<prereq id="dojox_mobile_app_17"/>
+			<prereq id="dojox_mobile_compat_17"/>
+			<prereq id="dojox_mobile_app_compat_17"/>
+			<capability id="dojox-all" value="1.7"/>
+			<contribution type="head">
+				<!-- Load the layer itself -->
+				<sub-contribution type="js">
+					<uri value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_all.js" />
+					<uri type="debug" value="res:{rep=WP GlobalThemeConfig;key=resources.js.dojo.contextRoot}/v1.7/dojox/_dojox_all.js.uncompressed.js" />
+				</sub-contribution>
+			</contribution>
+		</module>
+	</extension>
+
+</plugin>

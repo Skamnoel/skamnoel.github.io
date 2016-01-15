@@ -1,0 +1,73 @@
+<div style="font-size:150%; padding: 5px;text-align: center;vertical-align:top;">
+	<h1 style="margin:auto;">The Intoduction to the beauty of MVC:</h1>
+<!-- 	<div data-dojo-type="dijit.form.Form"> -->
+	<h2>ShowCase #1:</h2>
+
+	<table width="100%" style="">
+		<tr>
+			<td class='mycell'>
+				<p>dijit.form.DateTextBox:
+					<div data-dojo-type="dijit.form.DateTextBox" data-dojo-props="ref: this.model.myDate"></div>
+				</p>
+			</td>
+			
+			<td class='mycell' >
+				<p>dijit.CalendarLite
+					<div  data-dojo-type="dijit.CalendarLite" data-dojo-props="ref: this.model.myDate" style="margin:auto;" ></div>
+				</p>
+			</td>
+			<td class='mycell' >
+				<p>dojox.widget.Calendar:
+					<div  data-dojo-type="dojox.widget.Calendar" data-dojo-props="ref: this.model.myDate" style="margin:auto;" ></div>
+				</p>
+			</td>
+
+		</tr>
+	</table>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:incrementDate" >Увеличить значение в модели на 1 день</button>
+
+	<h2>ShowCase #2:</h2>
+
+	<table width="100%" style="">
+		<tr>
+			<td class='mycell'>
+				<p>dijit.form.TextBox:
+					<div data-dojo-type="dijit.form.TextBox" data-dojo-props="ref: this.model.myText, intermediateChanges:true"></div>
+					<!--
+						Для того, чтобы изменения были видны без потери фокуса (т.е. сразу при наборе символов) используйте параметр:
+						intermediateChanges:true
+					-->
+				</p>
+			</td>
+			
+			<td class='mycell'>
+				<p>dijit.form.TextBox:
+					<div data-dojo-type="dijit.form.TextBox" data-dojo-props="ref: this.model.myText, intermediateChanges:true"></div>
+				</p>
+				<p>dijit.form.ValidationTextBox:
+					<div data-dojo-type="dijit.form.ValidationTextBox" data-dojo-props="ref: this.model.myText, intermediateChanges:true"></div>
+				</p>
+			</td>
+			<td class='mycell'>
+				<p>dijit.form.Textarea:
+					<div data-dojo-type="dijit.form.Textarea" data-dojo-props="ref: this.model.myText, intermediateChanges:true"></div>
+				</p>
+				<p>dijit.form.SimpleTextarea:
+					<div data-dojo-type="dijit.form.SimpleTextarea" data-dojo-props="ref: this.model.myText, intermediateChanges:true"></div>
+				</p>
+				
+			</td>
+		</tr>
+	</table>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:setValueToTest" >Записать в модель 'ТЕСТ'</button>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:resetModel" >Вызвать reset модели</button>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:commitModel" >Вызвать commit модели</button>
+
+	<p>"Бонус":</p>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:toggleReadOnly" >  toggle readOnly  </button>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:toggleRequired" >  toggle required  </button>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:toggleRelevant" >  toggle relevant  </button>
+	<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:toggleValid" >     toggle Valid     </button>
+<!-- 	</div> -->
+	
+</div>

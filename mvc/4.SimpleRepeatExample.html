@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Default Output Example</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" djConfig="parseOnLoad:1,isDebug:1,async:1" src="/libs/dojo_1.7/dojo/dojo.js"></script>
+		<script type="text/javascript" >
+			var model;
+			require(['dojo/parser',
+					'dojox/mvc/StatefulModel',
+					'dojox/mvc/Output',
+					'dojox/mvc/Group',
+					'dojox/mvc/Repeat',
+					'dojox/mvc'	
+					
+				],function(parser){
+					
+					model = dojox.mvc.newStatefulModel({ data : {
+						department:"Отдел интранет решений",
+						employees: [
+							{ name : "Галина", surname : "Светлова", patronymic : "Васильевна" },
+							{ name : "Людмила", surname : "Токарева", patronymic : "Андреевна" },
+							{ name : "Али", surname : "Алимов", patronymic : "Абдулберович" }
+						]
+					}});
+
+				})
+		</script>
+	</head>
+	<body class="claro">
+		<div class="wrapper" style="margin:10% 40%;width:400px">
+
+			<h3>С использованием Group:</h3>
+			<div data-dojo-type="dojox.mvc.Repeat" data-dojo-props="ref: model.employees, exprchar:'#'" >
+				<div data-dojo-type="dojox.mvc.Group" data-dojo-props="ref: '#{this.index}'" >
+					<span data-dojo-type="dojox.mvc.Output"	data-dojo-props="ref: 'surname'"></span>
+					<span data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: 'name'"></span>
+					<span data-dojo-type="dojox.mvc.Output"	data-dojo-props="ref: 'patronymic'"></span>
+				</div>
+			</div>
+
+			<h3>Без использования Group:</h3>
+			<div data-dojo-type="dojox.mvc.Repeat" data-dojo-props="ref: model.employees, exprchar:'#'" >
+				<div>
+					<span data-dojo-type="dojox.mvc.Output"	data-dojo-props="ref: '#{this.index}.surname'"></span>
+					<span data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: '#{this.index}.name'"></span>
+					<span data-dojo-type="dojox.mvc.Output"	data-dojo-props="ref: '#{this.index}.patronymic'"></span>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

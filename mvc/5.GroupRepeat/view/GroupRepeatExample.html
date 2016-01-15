@@ -1,0 +1,45 @@
+<div class="root-wrapper">
+	<h2 class="my-header">GroupRepeatExample:</h2>
+	<table width="100%" style="vertical-align:top;">
+		<tr>
+			<td class="table-cell" style="width:50%;">
+				<!-- Список для выбора -->
+				<h2>Список: </h2>
+				<ul class="person-list" data-dojo-type="dojox.mvc.Repeat" data-dojo-props="ref: this.peopleModel.people, exprchar:'#'">
+					<li class="person-item" data-dojo-type="dojox.mvc.Group" data-dojo-props="ref: '#{this.index}'" data-index="#{this.index}">
+						<!-- Можно вывести ФИО так: -->
+						<!-- <span data-dojo-type="dojox.mvc.Output" data-index="#{this.index}" data-dojo-props="ref: 'surname'"></span>
+						<span data-dojo-type="dojox.mvc.Output" data-index="#{this.index}" data-dojo-props="ref: 'name'"></span>
+						<span data-dojo-type="dojox.mvc.Output" data-index="#{this.index}" data-dojo-props="ref: 'patronymic'"></span> 
+						</br> -->
+						<!-- А можно через новый вычисляемый при любом изменении состовзляющих аттрибут - см. модель для подробностей -->
+						<span data-dojo-type="dojox.mvc.Output" data-index="#{this.index}" data-dojo-props="ref: 'fio'"></span>
+					</li>
+				</ul>
+			</td>
+			
+			<td class="table-cell">
+				<h2>Добавление/редактирование сотрудника: </h2>
+				<!-- Переключая ref на группе ниже мы управляем тем какая модель сейчас редактируется внутри формы -->
+				<div data-dojo-type="dojox.mvc.Group" data-dojo-props="ref: this.blankPersonModel" data-dojo-attach-point="_groupAttachPoint">
+					<div data-dojo-type="dijit.form.Form" data-dojo-attach-point="_myForm">
+						<div data-dojo-type="dojox.layout.TableContainer" data-dojo-props="showLabels:true, labelWidth:'40%'">
+							<span title='ID в системе:' data-dojo-type="dojox.mvc.Output" data-dojo-props="ref: 'id'"></span>
+							<input title='Фамилия*:' data-dojo-type="dijit.form.ValidationTextBox" data-dojo-props="ref: 'surname', intermediateChanges:true, placeholder: 'Введите фамилию', required:true"/>
+							<input title='Имя*:' data-dojo-type="dijit.form.ValidationTextBox" data-dojo-props="ref: 'name', intermediateChanges:true, placeholder: 'Введите имя', required:true"/>
+							<input title='Отчество*:' data-dojo-type="dijit.form.ValidationTextBox" data-dojo-props="ref: 'patronymic', intermediateChanges:true, placeholder: 'Введите отчество', required:true"/>
+							<input title='День рождения*:' data-dojo-type="dijit.form.DateTextBox" data-dojo-props="ref: 'dateOfBirth', required:true, placeholder: 'XX.XX.XXXX', constraints:{max: this.maxBirthdayValue}, openOnClick: false, dropDownDefaultValue: this.maxBirthdayValue, rangeMessage:'Минимальный возраст - 14 лет'" data-dojo-attach-point="_birthDayInput"/>
+							<input title='Должность:' data-dojo-type="dijit.form.ValidationTextBox" data-dojo-props="ref: 'jobPosition', intermediateChanges:true, placeholder: 'Введите должность'"/>
+						</div>
+					</div>
+					<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:commit" data-dojo-props="ref:this.buttonModel">Сохранить изменения</button>
+					<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:reset" data-dojo-props="ref:this.buttonModel">Отменить изменения</button><br/>
+					<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:addPerson" data-dojo-props="ref:this.buttonModel">Добавить</button>
+					<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:deletePerson" data-dojo-props="ref:this.buttonModel">Удалить</button>
+					<button data-dojo-type="dijit.form.Button" type="button" data-dojo-attach-event="onClick:resetEdit">Новый</button>
+					<div class="info-msg" data-dojo-attach-point="_infoMsg">Заполните все поля со * для активации кнопок.</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

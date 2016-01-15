@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>GroupRepeatExample</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="/libs/dojo_1.7/dojo/dojo.js"></script>
+
+  <link href="/libs/dojo_1.7/dojo/resources/dojo.css" rel="stylesheet">
+  <!-- <link href="/libs/dojo_1.7/dijit/themes/dijit.css" rel="stylesheet"> -->
+  <link href="/libs/dojo_1.7/dijit/themes/claro/claro.css" rel="stylesheet">
+  <style>
+      .person-item{cursor: pointer;width: 375px;padding-left: 20px;}
+      /*.person-list{list-style-type: decimal;}*/
+      .person-item:hover{background-color: #62F289;}
+      .selected{background-color:#0CBE34 !important;font-weight:bold;}
+      h2{margin:10px auto;}
+      .table-cell{border:1px dashed #777; padding: 5px;vertical-align:top;}
+      .my-button{margin-top:15px;}
+      table{vertical-align:top;}
+      .my-header{text-align: center;margin:auto;}
+      .root-wrapper{font-size:150%;}
+      .info-msg{font-size:70%;padding-top:10px;color:#FF1111;}
+  </style>
+  </head>
+  <body class="claro">
+    
+<div style="width:1200px;margin:25px auto;border:1px dashed #777;">
+  <div style="width: 100%;" id="containerId"></div>
+</div>
+
+<script>
+  var appPath = window.location.pathname;
+  require({
+    packages : [{
+        name : 'lms/examples',
+        location : appPath
+      }
+    ]
+  }, ['lms/examples/controller/GroupRepeatExample'], function (App) {
+
+    var application = new App();
+    application.placeAt('containerId');
+    application.startup();
+
+  });
+</script>
+
+  </body>
+</html>
