@@ -7,6 +7,7 @@ h1 {text-align: center;}
 .mvc .back { background-color: #FCC120;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
 .js .front { background-color: #3EC7F3; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
 .js .back { background-color: #3EC7F3;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
+.tile-list {max-width: 1250px;}
 body {background-color: #eee;font-family:sans-serif;}
 a {color:#fff;}
 ul{margin-top:15px;}
