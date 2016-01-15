@@ -1,0 +1,121 @@
+.comment{font-size:12px;color:#999;font-style: italic;}
+.clear{clear:both;}
+h1 {text-align: center;}
+.front { background-color: #71F23A; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
+.back { background-color: #3AF27B;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
+.mvc .front { background-color: #FCC120; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
+.mvc .back { background-color: #FCC120;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
+.js .front { background-color: #3EC7F3; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
+.js .back { background-color: #3EC7F3;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
+body {background-color: #eee;font-family:sans-serif;}
+a {color:#fff;}
+ul{margin-top:15px;}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+html {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.tile {
+  float: left;
+  margin: 0 auto 1% 1%;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  height: 300px;
+  font-weight: 300;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  width: 300px;
+  background-color: transparent;
+}
+
+.tile div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  padding: 0 1em;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  vertical-align: middle;
+}
+.tile a {
+	display: table-cell;
+	width: 300px;
+	height: 250px;
+	vertical-align: middle;
+}
+.tile div p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.rotate3d {
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  overflow: visible;
+}
+.faces {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 1s;
+  transition: -ms-transform 1s;
+  transition: transform 1s;
+}
+.faces div {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotate3dY .back {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.rotate3dX .back {
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.rotate3dY:hover .faces:hover {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.rotate3dX:hover .faces:hover {
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}

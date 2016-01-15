@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myTest</title>
+	<!-- Core Libs -->
+	<script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="scripts/underscore.js"></script>
+	<script type="text/javascript" src="scripts/backbone.js"></script>
+	<!-- Code Examples Syntax Highlighting -->
+	<script type="text/javascript" src="scripts/xregexp-all.js"></script>
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+	<!-- (c) my precious! =] -->
+	<script type="text/javascript" src="scripts/myScript.js"></script>
+	
+	<!-- So it does not look cheap -->
+	<link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/main.css"/>
+</head> 
+<body class='lms'>
+
+	<div id='menu'></div>
+
+	<div class="center">
+		<div id="examplesContainer"></div>
+	</div>
+
+	<script type="text/x-template-lodash" id="exampleTemplate">
+		<% if (title) 	{ %>
+			<h1 class='example-title'> <%= title %> </h1>
+		<% } %>	
+	</script>
+
+	<script type="text/x-template-lodash" id="blockTemplate">
+		<div class='example-wrapper'>
+			<% if (title) print ('<h3>'+title+'</h3>'); %> 
+			<% if (description) { %>
+				<p class='descr'><%= description %></p>
+			<% } %>
+			<div class="codewrapper">
+				<pre class='brush: js;'> <%= code %> </pre>
+				<div class="run-button-wrapper" title="Запустить пример">
+					<a class='run-button js-button' nohref></a>
+				</div>
+			</div>
+			<% if (explanation) { %>
+				<a class='trigger-explan' nohref><%= showDescTxt %></a>
+				<p class='explan' style='display:none;'><%= explanation %></p>			    
+			<% } %>
+		</div>
+	</script>
+
+	<script type="text/x-template-lodash" id="menuItemTemplate">
+		<% if (title) { %>
+			<a nohref class='menu-item-link'> <%= title %> </a>
+		<% } %>	
+	</script>
+
+</body>
+</html>
