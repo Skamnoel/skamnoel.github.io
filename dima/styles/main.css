@@ -1,0 +1,35 @@
+body {
+	color:#333;
+	background-color: #fff;
+}
+h1, h2, h3{
+	text-align: center;
+	/*margin: 0px;*/
+    /*margin-bottom: 10px;*/
+    /*width:100%;*/
+}
+
+a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+/*.center{
+	width:950px;
+	margin: auto;
+}*/
+ul {
+	list-style-type: none;
+	padding:0px 10px;
+}
+.server-info-wrapper {
+	margin: 15px 0;
+}
+ td, th{
+	border:1px solid #333;
+}
+.inner-table{
+	width: 100%;
+}
+.outer-table{
+	width: 1200px;
+}

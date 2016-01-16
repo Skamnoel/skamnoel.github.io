@@ -1,12 +1,13 @@
 .comment{font-size:12px;color:#999;font-style: italic;}
 .clear{clear:both;}
 h1 {text-align: center;}
-.front { background-color: #71F23A; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
-.back { background-color: #3AF27B;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
-.mvc .front { background-color: #FCC120; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
-.mvc .back { background-color: #FCC120;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
-.js .front { background-color: #3EC7F3; color: #ddd;border:3px dashed #eee;border-radius: 5px;}
-.js .back { background-color: #3EC7F3;  color: #ddd;border:3px dashed #000;border-radius: 5px;}
+.front { background-color: #71F23A; color: #ddd;border:3px dashed #eee;border-radius: 5px;color: #ddd;}
+.back { background-color: #3AF27B;  color: #ddd;border:3px dashed #000;border-radius: 5px;color: #ddd;}
+.mvc .front { background-color: #FCC120; }
+.mvc .back { background-color: #FCC120;}
+.js .front { background-color: #3EC7F3;}
+.js .back { background-color: #3EC7F3;}
+.dima .faces>div { background-color: #5DE618;}
 .tile-list {max-width: 1250px;}
 body {background-color: #eee;font-family:sans-serif;}
 a {color:#fff;}

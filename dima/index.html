@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myTest</title>
+	<!-- Core Libs -->
+	<script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="scripts/underscore.js"></script>
+	<script type="text/javascript" src="scripts/backbone.js"></script>
+	<!-- (c) my precious! =] -->
+	<script type="text/javascript" src="scripts/myScript.js"></script>
+	
+	<!-- So it does not look cheap -->
+	<link type="text/css" rel="stylesheet" href="styles/main.css"/>
+</head> 
+<body>
+
+	<div class="center">
+		<div id="main">
+			<h1 style="padding-top:200px;">Загрузка...</h1>
+		</div>
+	</div>
+
+	<script type="text/x-template-lodash" id="serverInfoTemplate">
+		<div class='wrapper'>
+		<% _.each(testDataArray, function(serverData) { %>  
+			<div class='server-info-wrapper'>
+				
+				<table class="outer-table">
+					<caption><h2> <%= serverData.serverID %> - <%= serverData.server.serverName %></h2> </caption>
+					<tr>
+						<% if (!_.isEmpty(serverData.server.data.jvm)) { 
+							var jvm = serverData.server.data.jvm;
+						%>
+						<td>
+							<table class="inner-table">
+								<tr><th colspan="4"><div>JVM</div></th></tr>
+								<tr>
+									<% if (jvm.maxMemory) { %><td>maxMemory</td><% } %>
+									<% if (jvm.maxHeapDumpsOnDisk) { %><td>maxHeapDumpsOnDisk</td><% } %>
+									<% if (jvm.heapSize) { %><td>heapSize</td><% } %>
+									<% if (jvm.freeMemory) { %><td>freeMemory</td><% } %>
+								</tr>
+								<tr>
+									<% if (jvm.maxMemory) { %>
+										<td><%= jvm.maxMemory %></td>
+									<% } %>
+									<% if (jvm.maxHeapDumpsOnDisk) { %>
+										<td><%= jvm.maxHeapDumpsOnDisk %></td>
+									<% } %>
+									<% if (jvm.heapSize) { %>
+										<td><%= jvm.heapSize %></td>
+									<% } %>
+									<% if (jvm.freeMemory) { %>
+										<td><%= jvm.freeMemory %></td>
+									<% } %>
+								</tr>
+							</table>
+						</td>
+						<% } %>
+						<% if (!_.isEmpty(serverData.server.data.info)) { 
+							var serverInfo = serverData.server.data.info
+						%>
+						<td>
+							<table class="inner-table">
+								<tr><th colspan="11"><div>Info</div></th></tr>
+								<tr>
+									<% if (serverInfo.version) { %><td>version</td><% } %>
+									<% if (serverInfo.j2eeType) { %><td>j2eeType</td><% } %>
+									<% if (serverInfo.platform) { %><td>platform</td><% } %>
+									<% if (serverInfo.mbeanIdentifier) { %><td>mbeanIdentifier</td><% } %>
+									<% if (serverInfo.process) { %><td>process</td><% } %>
+									<% if (serverInfo.type) { %><td>type</td><% } %>
+									<% if (serverInfo.name) { %><td>name</td><% } %>
+									<% if (serverInfo.node) { %><td>node</td><% } %>
+									<% if (serverInfo.spec) { %><td>spec</td><% } %>
+									<% if (serverInfo.J2EEServer) { %><td>J2EEServer</td><% } %>
+									<% if (serverInfo.cell) { %><td>cell</td><% } %>
+								</tr>
+								<tr>
+									<% if (serverInfo.version) { %>
+										<td><%= serverInfo.version %></td>
+									<% } %>
+									<% if (serverInfo.j2eeType) { %>
+										<td><%= serverInfo.j2eeType %></td>
+									<% } %>
+									<% if (serverInfo.platform) { %>
+										<td><%= serverInfo.platform %></td>
+									<% } %>
+									<% if (serverInfo.mbeanIdentifier) { %>
+										<td><%= serverInfo.mbeanIdentifier %></td>
+									<% } %>
+									<% if (serverInfo.process) { %>
+										<td><%= serverInfo.process %></td>
+									<% } %>
+									<% if (serverInfo.type) { %>
+										<td><%= serverInfo.type %></td>
+									<% } %>
+									<% if (serverInfo.name) { %>
+										<td><%= serverInfo.name %></td>
+									<% } %>
+									<% if (serverInfo.node) { %>
+										<td><%= serverInfo.node %></td>
+									<% } %>
+									<% if (serverInfo.spec) { %>
+										<td><%= serverInfo.spec %></td>
+									<% } %>
+									<% if (serverInfo.J2EEServer) { %>
+										<td><%= serverInfo.J2EEServer %></td>
+									<% } %>
+									<% if (serverInfo.cell) { %>
+										<td><%= serverInfo.cell %></td>
+									<% } %>
+								</tr>
+							</table>
+						</td>
+						<% } %>
+					</tr>
+					<tr>
+						<% 
+						var  webContainerPerf = serverData.server.data.webContainerPerf
+						if (!_.isEmpty(serverData.server.data.webContainerPerf)) {
+						%>
+						<td>
+							<table class="inner-table">
+								<tr><th colspan="5"><div>webContainerPerf</div></th></tr>
+								<tr>
+									<% if (webContainerPerf.PercentUsed) { %><td>PercentUsed</td><% } %>
+									<% if (webContainerPerf.ConcurrentHungThreadCount) { %><td>ConcurrentHungThreadCount</td><% } %>
+									<% if (webContainerPerf.ActiveCount) { %><td>ActiveCount</td><% } %>
+									<% if (webContainerPerf.PoolSize) { %><td>PoolSize</td><% } %>
+									<% if (webContainerPerf.PercentMaxed) { %><td>PercentMaxed</td><% } %>
+								</tr>
+								<tr>
+									<% if (webContainerPerf.PercentUsed) { %>
+										<td><%= webContainerPerf.PercentUsed %></td>
+									<% } %>
+									<% if (webContainerPerf.ConcurrentHungThreadCount) { %>
+										<td><%= webContainerPerf.ConcurrentHungThreadCount %></td>
+									<% } %>
+									<% if (webContainerPerf.ActiveCount) { %>
+										<td><%= webContainerPerf.ActiveCount %></td>
+									<% } %>
+									<% if (webContainerPerf.PoolSize) { %>
+										<td><%= webContainerPerf.PoolSize %></td>
+									<% } %>
+									<% if (webContainerPerf.PercentMaxed) { %>
+										<td><%= webContainerPerf.PercentMaxed %></td>
+									<% } %>
+								</tr>
+							</table>
+						</td>
+						<% } else {%>
+						<td>
+							<table class="inner-table">
+								<tr><th colspan="5"><div>webContainerPerf</div></th></tr>
+								<tr>
+									<td><div style="text-align:center;" >No Data</div></td>
+								</tr>
+							</table>
+						</td>
+						<% }%>
+						<% 
+						if (!_.isEmpty(serverData.server.data.threadPoolConfig)) {
+							var  threadPoolConfig = serverData.server.data.threadPoolConfig;
+						%>
+						<td>
+							<table class="inner-table">
+								<tr><th colspan="11"><div>threadPoolConfig</div></th></tr>
+								<tr>
+									<td><h3 style="margin:0;font-size:14px;">MIN</h3></td>
+									<% if (threadPoolConfig["ORB.thread.pool"]) { %>
+										<td><%=threadPoolConfig["ORB.thread.pool"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["ProcessDiscovery"]) { %>
+										<td><%=threadPoolConfig["ProcessDiscovery"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["WMQJCAResourceAdapter"]) { %>
+										<td><%=threadPoolConfig["WMQJCAResourceAdapter"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["HAManager.thread.pool"]) { %>
+										<td><%=threadPoolConfig["HAManager.thread.pool"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["TCPChannel.DCS"]) { %>
+										<td><%=threadPoolConfig["TCPChannel.DCS"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["SoapConnectorThreadPool"]) { %>
+										<td><%=threadPoolConfig["SoapConnectorThreadPool"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["AriesThreadPool"]) { %>
+										<td><%=threadPoolConfig["AriesThreadPool"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["WebContainer"]) { %>
+										<td><%=threadPoolConfig["WebContainer"].minimumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["SIBFAPThreadPool"]) { %>
+										<td><%=threadPoolConfig["SIBFAPThreadPool"].minimumSize %></td>
+									<% } %>
+								</tr>
+								<tr>
+									<td><h3 style="margin:0;font-size:14px;">MAX</h3></td>
+									<% if (threadPoolConfig["ORB.thread.pool"]) { %>
+										<td><%=threadPoolConfig["ORB.thread.pool"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["ProcessDiscovery"]) { %>
+										<td><%=threadPoolConfig["ProcessDiscovery"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["WMQJCAResourceAdapter"]) { %>
+										<td><%=threadPoolConfig["WMQJCAResourceAdapter"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["HAManager.thread.pool"]) { %>
+										<td><%=threadPoolConfig["HAManager.thread.pool"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["TCPChannel.DCS"]) { %>
+										<td><%=threadPoolConfig["TCPChannel.DCS"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["SoapConnectorThreadPool"]) { %>
+										<td><%=threadPoolConfig["SoapConnectorThreadPool"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["AriesThreadPool"]) { %>
+										<td><%=threadPoolConfig["AriesThreadPool"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["WebContainer"]) { %>
+										<td><%=threadPoolConfig["WebContainer"].maximumSize %></td>
+									<% } %>
+									<% if (threadPoolConfig["SIBFAPThreadPool"]) { %>
+										<td><%=threadPoolConfig["SIBFAPThreadPool"].maximumSize %></td>
+									<% } %>
+								</tr>
+							</table>
+						</td>
+						<% } %>
+					</tr>
+				</table>
+			</div>
+		<% }); %>
+		</div>
+	</script>
+
+</body>
+</html>
