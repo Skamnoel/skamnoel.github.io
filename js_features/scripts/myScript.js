@@ -113,6 +113,11 @@ $(function() {
 		render: function() {
 			var parsedTemplate = this.template(this.model.attributes);
 			this.$el.html(parsedTemplate);
+			var codeElems = this.$el.find(".codewrapper");
+			if (codeElems.length) {
+				codeElems[0].viewAttached = this;
+			}
+			// debugger
 			return this;
 		},
 
@@ -349,7 +354,7 @@ $(function() {
 		}]
 	}];
 
-	var jsExamplesCollection = new JsExamplesCollection(examples)
+	var jsExamplesCollection = new JsExamplesCollection(examples);
 
 	var jsExamplesColView = new JsExamplesColView({
 		collection: jsExamplesCollection

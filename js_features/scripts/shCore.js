@@ -1154,10 +1154,23 @@ function quickCodeHandler(e)
 	// set up handler for lost focus
 	attachEvent(textarea, 'blur', function(e)
 	{	
-		console.log('textarea value:\n', textarea.value);
-		// window.test = {};
-		// window.test.highlighter = highlighter;
-		// $(document).trigger('valueChanged',{container: highlighter, newVal: textarea.value})
+		// console.log('textarea value:\n', textarea.value);
+		var codewrapper  = findParentElement(target, '.codewrapper');
+		if (codewrapper && codewrapper.viewAttached) {
+			var view = codewrapper.viewAttached;
+			var model = codewrapper.viewAttached.model;
+			var currentCode = model.get("code");
+			// console.log("currentCode:", currentCode);
+			model.set("code",textarea.value);
+			// console.log("newCode:", model.get("code"));
+			SyntaxHighlighter.highlight(view.render().el);
+		}
+		// debugger
+
+		// console.log("codewrapper:", codewrapper);
+		// console.log("view attached:", codewrapper.viewAttached);
+		// console.log("model:", codewrapper.viewAttached.model);
+
 		textarea.parentNode.removeChild(textarea);
 		removeClass(highlighterDiv, 'source');
 	});
