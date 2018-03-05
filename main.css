@@ -8,6 +8,7 @@ h1 {text-align: center;}
 .js .front { background-color: #3EC7F3;}
 .js .back { background-color: #3EC7F3;}
 .dima .faces>div { background-color: #5DE618;}
+.womans-day .faces>div { background-color: #5DE618;}
 .tile-list {max-width: 1250px;}
 body {background-color: #eee;font-family:sans-serif;}
 a {color:#fff;}
