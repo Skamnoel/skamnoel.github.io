@@ -55,6 +55,12 @@
 .front.anna {
     background-image: url('./images/Anna.jpg');
 }
+.front.yulya {
+    background-image: url('./images/Yulya.jpg');
+}
+.front.tanya {
+    background-image: url('./images/Tanya.jpg');
+}
 
 .front {
     background-size: auto 427px;
