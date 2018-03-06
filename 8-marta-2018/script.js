@@ -31,11 +31,14 @@ $(document).ready(function() {
     var flippers = $('.flip-container');
     function handler(debugString){
         return function (event) {
-            console.log(debugString);
+            //console.log(debugString);
             var flipper = $(this).closest('.flip-container');
-            var name = flipper.data('name');
-            var compliment = getRandomCompliment(name);
-            flipper.find('.back-compliment').html(compliment);
+            // Если карточка открывается - выставляем комплимент
+            if (!flipper.hasClass('hover')) {
+                var name = flipper.data('name');
+                var compliment = getRandomCompliment(name);
+                flipper.find('.back-compliment').html(compliment);
+            }
             $(this).closest('.flip-container').toggleClass('hover');
         }
     }
