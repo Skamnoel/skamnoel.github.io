@@ -78,7 +78,7 @@
     z-index: 2;
 }
 
-.front .name {
+.front .title {
     font-size: 1.5em;
     display: inline-block;
     background: rgba(33, 33, 33, 0.9);

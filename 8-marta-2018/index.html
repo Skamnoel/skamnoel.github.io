@@ -9,105 +9,22 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="app">
-        <h1>Пробник поздравлялки с 8 марта</h1>
-        <div class="flip-container" data-name="Маша">
-            <div class="flipper">
-                <div class="front masha">
-                    <span class="name">БТ уже в конфе!</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container" data-name="Аня">
-            <div class="flipper">
-                <div class="front anna">
-                    <span class="name">Увезите соседа!</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container" data-name="Юля">
-            <div class="flipper">
-                <div class="front yulya">
-                    <span class="name">Я слышу: <br/> у нас всё супер!</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container" data-name="Таня">
-            <div class="flipper">
-                <div class="front tanya">
-                    <span class="name">Омниканальный <br/> дизайн!</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
 
-        <div class="flip-container" data-name="Эльмира">
-            <div class="flipper">
-                <div class="front elmira">
-                    <span class="name">Все в ПРОМ!</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container" data-name="Катя">
-            <div class="flipper">
-                <div class="front katya">
-                    <span class="name">???</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
+    <script type="text/x-template-lodash" id="girlTemplate">
+            <div class="flip-container" data-name="<%= displayName %>">
+                <div class="flipper">
+                    <div class="front <%= className %>">
+                        <span class="title"><%= title %></span>
+                    </div>
+                    <div class="back">
+                        <div class="back-logo"></div>
+                        <div class="back-compliment"></div>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="flip-container" data-name="Мария">
-            <div class="flipper">
-                <div class="front mariya">
-                    <span class="name">???</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container" data-name="Настя">
-            <div class="flipper">
-                <div class="front nastya">
-                    <span class="name">Всё проверено. <br/> Баги... есть!</span>
-                </div>
-                <div class="back">
-                    <div class="back-logo"></div>
-                    <div class="back-compliment">Здесь генерим и пишем комплимент. Может даже с разной картинкой!</div>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </script>
+
+    <div id="app"></div>
 </body>
 </html>

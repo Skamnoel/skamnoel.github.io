@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var compliments = [
         '${ name }, ты прирожденный руководитель и лидер! Тебе бы корпорацию возглавлять, уж ты бы развернулся!',
         '${ name }, так бывает очень редко, но у тебя есть способности ко всему, за что ты берешься! Ты удивительный человек!',
@@ -16,10 +17,53 @@ $(document).ready(function() {
         '${ name }, как тебе удается так грамотно спланировать свой день? У тебя для всего есть время!',
         '${ name }, у тебя есть огромный творческий потенциал! Ты способна творить шедевры в любой сфере жизни!',
         '${ name }, так великолепно делать свою работу можешь только ты!',
-        '${ name },ты лучшая в своём деле!',
+        '${ name }, ты лучшая в своём деле!',
         '${ name }, ты прекрасна во всех своих проявлениях!',
         '${ name }, оставайся и дальше такой прекрасной',
-        '${ name }, будь всегда такой жизнерадостной и веселой!',
+        '${ name }, будь всегда такой жизнерадостной и веселой!'
+    ];
+
+    const girls = [
+        {
+            displayName: 'Маша',
+            title: 'БТ уже в конфе!',
+            className: 'masha'
+        },
+        {
+            displayName: 'Аня',
+            title: 'Увезите соседа!',
+            className: 'anna'
+        },
+        {
+            displayName: 'Юля',
+            title: 'Я слышу: мы всё<br/>успеваем к демо!',
+            className: 'yulya'
+        },
+        {
+            displayName: 'Таня',
+            title: 'Омниканальный <br/> дизайн!',
+            className: 'tanya'
+        },
+        {
+            displayName: 'Эльмира',
+            title: 'Все в ПРОМ!',
+            className: 'elmira'
+        },
+        {
+            displayName: 'Маша',
+            title: 'Всегда в моде!',
+            className: 'mariya'
+        },
+        {
+            displayName: 'Катя',
+            title: 'Багов нет!',
+            className: 'katya'
+        },
+        {
+            displayName: 'Настя',
+            title: 'Баги всегда найдутся',
+            className: 'nastya'
+        }
     ];
 
     function getRandomCompliment (name) {
@@ -28,7 +72,6 @@ $(document).ready(function() {
         return pickedTemplate({name: name});
     }
 
-    var flippers = $('.flip-container');
     function handler(debugString){
         return function (event) {
             //console.log(debugString);
@@ -42,7 +85,18 @@ $(document).ready(function() {
             $(this).closest('.flip-container').toggleClass('hover');
         }
     }
-    flippers.find('.front').bind('click', handler('clickFront'));
-    flippers.find('.back').bind('click', handler('clickBack'));
 
+    function applyListeners() {
+        var flippers = $('.flip-container');
+        flippers.find('.front').bind('click', handler('clickFront'));
+        flippers.find('.back').bind('click', handler('clickBack'));
+    }
+
+    var getHtmlForGirl = _.template($('#girlTemplate').html());
+
+    _.forEach(girls, function(girl){
+        $('#app').append(getHtmlForGirl(girl))
+    })
+
+    applyListeners();
 });
