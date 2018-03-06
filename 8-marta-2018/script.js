@@ -112,4 +112,9 @@ $(document).ready(function() {
     });
 
     applyListeners();
+
+    // для предзагрузки изображений
+    for (var i = 1; i < logoAmount; i++){
+        $('#app').append('<img src="./images/logos/' + i + '.jpg" style="position: absolute; top: -9999px;"/>')
+    }
 });
