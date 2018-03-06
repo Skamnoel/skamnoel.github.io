@@ -25,6 +25,7 @@ section {
     max-width: 700px;
     max-height: 800px;
     margin: auto;
+    z-index: 10;
 }
 
 .flip-container.hover .flipper {
@@ -161,4 +162,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ball {
+    position: fixed;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 0;
 }
