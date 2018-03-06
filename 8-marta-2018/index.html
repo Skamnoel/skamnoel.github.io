@@ -5,12 +5,13 @@
     <title>с 8 Марта!</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <div id="app">
         <h1>Пробник поздравлялки с 8 марта</h1>
-        <div class="flip-container" >
+        <div class="flip-container" data-name="Маша">
             <div class="flipper">
                 <div class="front masha">
                     <span class="name">БТ уже в конфе!</span>
@@ -22,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-container">
+        <div class="flip-container" data-name="Аня">
             <div class="flipper">
                 <div class="front anna">
                     <span class="name">Увезите соседа!</span>
@@ -34,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-container">
+        <div class="flip-container" data-name="Юля">
             <div class="flipper">
                 <div class="front yulya">
                     <span class="name">Я слышу: <br/> у нас всё супер!</span>
@@ -46,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-container">
+        <div class="flip-container" data-name="Таня">
             <div class="flipper">
                 <div class="front tanya">
                     <span class="name">Омниканальный <br/> дизайн!</span>
@@ -59,7 +60,7 @@
             </div>
         </div>
 
-        <div class="flip-container">
+        <div class="flip-container" data-name="Эльмира">
             <div class="flipper">
                 <div class="front elmira">
                     <span class="name">Все в ПРОМ!</span>
@@ -71,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-container">
+        <div class="flip-container" data-name="Катя">
             <div class="flipper">
                 <div class="front katya">
                     <span class="name">???</span>
@@ -83,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-container">
+        <div class="flip-container" data-name="Мария">
             <div class="flipper">
                 <div class="front mariya">
                     <span class="name">???</span>
@@ -95,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <div class="flip-container">
+        <div class="flip-container" data-name="Настя">
             <div class="flipper">
                 <div class="front nastya">
                     <span class="name">Всё проверено. <br/> Баги... есть!</span>
