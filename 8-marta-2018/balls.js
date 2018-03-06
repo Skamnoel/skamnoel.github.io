@@ -2,14 +2,14 @@ $(document).ready(function() {
 
     // Some random colors
     const colors = [
-        "#3CC157",
+        "#00c186",
         "#2AA7FF",
-        "#1B1B1B",
+        "#0dff00",
         "#FCBC0F",
         "#F85F36"
     ];
 
-    const numBalls = 100;
+    const numBalls = 200;
     const balls = [];
 
     for (var i = 0; i < numBalls; i++) {
@@ -21,7 +21,7 @@ $(document).ready(function() {
         var top = Math.floor(Math.random() * 100)
         ball.style.top = top + 'vh';
         ball.style.transform = 'scale(' + Math.random() + ')';
-        ball.style.width = Math.random() + 'em';
+        ball.style.width = Math.random() * 2 + 'em';
         ball.style.height = ball.style.width;
 
         balls.push(ball);

@@ -91,7 +91,7 @@ $(document).ready(function() {
                 flipper.find('.back-compliment').html(compliment);
                 // изменяем картинку
                 var imageUrl = './images/logos/' + getRandomLogo();
-                flipper.find('.back-logo').html('<img src=""' + imageUrl + '"/>');
+                flipper.find('.back-logo').html('<img src="' + imageUrl + '"/>');
             }
             $(this).closest('.flip-container').toggleClass('hover');
         }
