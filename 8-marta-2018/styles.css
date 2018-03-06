@@ -60,6 +60,18 @@
 .front.tanya {
     background-image: url('./images/Tanya.jpg');
 }
+.front.elmira {
+    background-image: url('./images/Elmira.jpg');
+}
+.front.katya {
+    background-image: url('./images/Katya.jpg');
+}
+.front.nastya {
+    background-image: url('./images/Nastya.jpg');
+}
+.front.mariya {
+    background-image: url('./images/Mariya.jpg');
+}
 
 .front {
     background-size: auto 427px;
