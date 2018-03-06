@@ -1,12 +1,30 @@
+body {
+    background: url(./images/bgs/bg4.jpg) center center fixed no-repeat #fdc7b6;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip-wrapper {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flip-container {
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
     -o-perspective: 1000;
     perspective: 1000;
-    border: 1px solid #ccc;
+    border: 2px solid rgba(255,105,180, 0.8);
 
-    display: inline-block;
-    margin-right: 20px;
+    max-width: 700px;
+    max-height: 800px;
+    margin: auto;
 }
 
 .flip-container.hover .flipper {
@@ -17,8 +35,8 @@
 }
 
 .flip-container, .front, .back {
-    width: 320px;
-    height: 427px;
+    width: 100%;
+    height: 100%;
 }
 
 .flipper {
@@ -35,6 +53,8 @@
     transform-style: preserve-3d;
 
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .front, .back {
@@ -50,40 +70,49 @@
 
 .front.masha {
     background-image: url('./images/Masha.jpg');
+    background-position: left bottom;
 }
 .front.anna {
     background-image: url('./images/Anna.jpg');
+    background-position: left center;
 }
 .front.yulya {
     background-image: url('./images/Yulya.jpg');
+    background-position: left top;
 }
 .front.tanya {
     background-image: url('./images/Tanya.jpg');
+    background-position: left bottom;
 }
 .front.elmira {
     background-image: url('./images/Elmira.jpg');
+    background-position: left bottom;
 }
 .front.katya {
     background-image: url('./images/Katya.jpg');
-}
-.front.nastya {
-    background-image: url('./images/Nastya.jpg');
+    background-position: left bottom;
 }
 .front.mariya {
     background-image: url('./images/Mariya.jpg');
+    background-position: left center;
+}
+.front.nastya {
+    background-image: url('./images/Nastya.jpg');
+    background-position: left center;
 }
 
 .front {
-    background-size: auto 427px;
+    background-size: cover;
     z-index: 2;
 }
 
 .front .title {
     font-size: 1.5em;
     display: inline-block;
-    background: rgba(33, 33, 33, 0.9);
+    background: rgba(255,105,180, 0.8);
     color: #f8f8f8;
     font-family: Courier;
+    text-align: center;
     padding: 5px 10px;
     border-radius: 5px;
     bottom: 50px;
@@ -103,29 +132,36 @@
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
-    background: #f8f8f8;
+    background: rgba(250, 218, 205, 0.7);
 }
 
 .back-logo {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 260px;
-    height: 220px;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHNMNw7ArKZwnbaTX_epdWfsMpeDK8u-6_ypt8tUwZNuZJpfM) 0 0 no-repeat;
-    background-size: 220px;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-logo img {
+    width: auto;
+    height: 100%;
+    display: block;
+    border: 1px solid rgba(0,0,0, 0.75);
 }
 
 .back-compliment {
     font-weight: bold;
-    color: #00304a;
+    color: rgb(55, 55, 55);
     position: absolute;
-    top: 180px;
+    top: 260px;
     left: 0;
     right: 0;
     padding: 10px;
     text-align: center;
-    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
-    font-family: Courier;
-    font-size: 1.5em;
+    text-shadow: 0.1em 0.1em 0.05em rgba(0, 0, 0, 0.3);
+    font-size: 1.8em;
 }
