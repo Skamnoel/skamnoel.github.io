@@ -1,5 +1,5 @@
 body {
-    background: url(./images/bgs/bg4.jpg) center center fixed no-repeat #fdc7b6;
+    background: url('./images/bgs/bg4.jpg') center center fixed no-repeat #fdc7b6;
 }
 section {
     display: flex;
