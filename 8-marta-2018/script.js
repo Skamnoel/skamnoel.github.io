@@ -98,11 +98,19 @@ $(document).ready(function() {
     }
 
     function applyListeners() {
+
+        // переворачиватели карточек
         var flippers = $('.flip-container');
         flippers.find('.front').bind('click', handler('clickFront'));
         flippers.find('.back').bind('click', handler('clickBack'));
 
+        // привязка скролла к секциям
         $.scrollify({section : "section"});
+
+        // перезагрузка при изменении режима
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener('orientationchange', function() { location.reload(); }, false);
+        }
     }
 
     var getHtmlForGirl = _.template($('#girlTemplate').html());
