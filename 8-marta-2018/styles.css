@@ -1,4 +1,4 @@
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 450px) {
     body {
         background-image: url('./images/bgs/bg3-small.jpg') !important;
     }
@@ -10,6 +10,14 @@
     }
     .front.tanya {
         background-position: left center !important;
+    }
+}
+@media (orientation: portrait) {
+    .back-logo {
+        height: 300px !important;;
+    }
+    .back-compliment {
+        font-size: 3em !important;
     }
 }
 body {
