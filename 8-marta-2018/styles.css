@@ -2,6 +2,9 @@
     body {
         background-image: url('./images/bgs/bg3-small.jpg') !important;
     }
+    .back-compliment {
+        font-size: 1.6em;
+    }
 }
 body {
     background-image: url('./images/bgs/bg3.jpg');
