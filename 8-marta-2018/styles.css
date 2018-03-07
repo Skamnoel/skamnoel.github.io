@@ -1,7 +1,17 @@
 @media (orientation: landscape) and (max-width: 450px) {
-
     .back-compliment {
         font-size: 1.6em !important;
+    }
+    .front.elmira {
+        background-position: left center !important;
+    }
+    .front.tanya {
+        background-position: left center !important;
+    }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+    .back-compliment {
+        font-size: 1em !important;
     }
     .front.elmira {
         background-position: left center !important;
