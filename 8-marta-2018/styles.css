@@ -1,7 +1,5 @@
 @media (orientation: landscape) and (max-width: 450px) {
-    body {
-        background-image: url('./images/bgs/bg3-small.jpg') !important;
-    }
+
     .back-compliment {
         font-size: 1.6em !important;
     }
@@ -13,9 +11,7 @@
     }
 }
 @media (orientation: portrait) {
-    body {
-        background-size: auto 100% !important;
-    }
+
     .back-logo {
         height: 300px !important;;
     }
@@ -23,13 +19,20 @@
         font-size: 3em !important;
     }
 }
-body {
-    background-image: url('./images/bgs/bg3-small.jpg');
-    background-position: center center;
+.background {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: url('./images/bgs/bg3-small.jpg') center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #efe8cc;
-    background-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 section {
     display: flex;
