@@ -1,5 +1,10 @@
+@media (orientation: landscape) {
+    body {
+        background-image: url('./images/bgs/bg3-small.jpg') !important;
+    }
+}
 body {
-    background-image: url('./images/bgs/bg1.jpg');
+    background-image: url('./images/bgs/bg3.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -143,7 +148,7 @@ section {
 .back-logo {
     padding-top: 15px;
     width: 100%;
-    height: 250px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
