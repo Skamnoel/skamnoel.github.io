@@ -2,22 +2,10 @@
     .back-compliment {
         font-size: 1.6em !important;
     }
-    .front.elmira {
-        background-position: left center !important;
-    }
-    .front.tanya {
-        background-position: left center !important;
-    }
 }
 @media (orientation: landscape) and (max-height: 600px) {
     .back-compliment {
         font-size: 1em !important;
-    }
-    .front.elmira {
-        background-position: left center !important;
-    }
-    .front.tanya {
-        background-position: left center !important;
     }
 }
 @media (orientation: portrait) {
@@ -126,11 +114,11 @@ section {
 }
 .front.tanya {
     background-image: url('./images/Tanya.jpg');
-    background-position: left bottom;
+    background-position: center center;
 }
 .front.elmira {
     background-image: url('./images/Elmira.jpg');
-    background-position: left bottom;
+    background-position: left center;
 }
 .front.katya {
     background-image: url('./images/Katya.jpg');
