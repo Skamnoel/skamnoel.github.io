@@ -9,7 +9,7 @@ $(document).ready(function() {
         "#F85F36"
     ];
 
-    const numBalls = 200;
+    const numBalls = 100;
     const balls = [];
 
     for (var i = 0; i < numBalls; i++) {
@@ -25,7 +25,7 @@ $(document).ready(function() {
         ball.style.height = ball.style.width;
 
         balls.push(ball);
-        document.body.append(ball);
+        $('body').append(ball)
     }
 
     // Keyframes
