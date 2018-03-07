@@ -9,7 +9,6 @@
     }
 }
 @media (orientation: portrait) {
-
     .back-logo {
         height: 300px !important;;
     }
@@ -27,6 +26,11 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
+}
+.version {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 body {
     margin: 0;
@@ -102,15 +106,15 @@ section {
 
 .front.masha {
     background-image: url('./images/Masha.jpg');
-    background-position: left bottom;
+    background-position: left 85%;
 }
 .front.anna {
     background-image: url('./images/Anna.jpg');
-    background-position: left center;
+    background-position: left 33%;
 }
 .front.yulya {
     background-image: url('./images/Yulya.jpg');
-    background-position: left top;
+    background-position: left 15%;
 }
 .front.tanya {
     background-image: url('./images/Tanya.jpg');
@@ -122,11 +126,11 @@ section {
 }
 .front.katya {
     background-image: url('./images/Katya.jpg');
-    background-position: left bottom;
+    background-position: left 60%;
 }
 .front.mariya {
     background-image: url('./images/Mariya.jpg');
-    background-position: left center;
+    background-position: left 30%;
 }
 .front.nastya {
     background-image: url('./images/Nastya.jpg');

@@ -53,7 +53,7 @@ $(document).ready(function() {
             className: 'elmira'
         },
         {
-            displayName: 'Маша',
+            displayName: 'Мариша',
             title: 'Всё <br/> чётко!',
             className: 'mariya'
         },
