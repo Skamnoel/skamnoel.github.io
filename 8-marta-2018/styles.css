@@ -5,6 +5,12 @@
     .back-compliment {
         font-size: 1.6em !important;
     }
+    .front.elmira {
+        background-position: left center !important;
+    }
+    .front.tanya {
+        background-position: left center !important;
+    }
 }
 body {
     background-image: url('./images/bgs/bg3.jpg');
