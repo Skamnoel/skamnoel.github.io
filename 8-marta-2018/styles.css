@@ -1,5 +1,9 @@
 body {
-    background: #efe8cc url('./images/bgs/bg4.jpg') no-repeat fixed center center;
+    background-image: url('./images/bgs/bg1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #efe8cc;
 }
 section {
     display: flex;
